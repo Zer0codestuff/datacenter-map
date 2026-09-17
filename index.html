@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Center Map — the world's compute infrastructure atlas</title>
+    <meta name="description" content="Interactive world map of every known data center: confirmed, probable and theorized sites color-coded by confidence, with per-country stats, power usage, operator and purpose." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <h1>Data Center Map</h1>
+      <nav>
+        <button data-view="map" class="nav-btn active">Map</button>
+        <button data-view="dashboard" class="nav-btn">Dashboard</button>
+        <button data-view="countries" class="nav-btn">Countries</button>
+        <button data-view="compare" class="nav-btn">Compare</button>
+        <button data-view="about" class="nav-btn">Data &amp; methodology</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="view-map" class="view active">
+        <div id="sidebar">
+          <input id="search" type="search" placeholder="Search name, operator, city…" />
+          <div class="filter-group">
+            <h3>Confidence tier</h3>
+            <label><input type="checkbox" data-f="tiers" value="confirmed" checked /> <span class="dot" style="background:#22c55e"></span> Confirmed</label>
+            <label><input type="checkbox" data-f="tiers" value="probable" checked /> <span class="dot" style="background:#f59e0b"></span> Probable</label>
+            <label><input type="checkbox" data-f="tiers" value="theorized" checked /> <span class="dot" style="background:#a855f7"></span> Theorized</label>
+          </div>
+          <div class="filter-group">
+            <h3>Status</h3>
+            <label><input type="checkbox" data-f="statuses" value="operational" checked /> Operational</label>
+            <label><input type="checkbox" data-f="statuses" value="under construction" checked /> Under construction</label>
+            <label><input type="checkbox" data-f="statuses" value="planned" checked /> Planned</label>
+            <label><input type="checkbox" data-f="statuses" value="decommissioned" checked /> Decommissioned</label>
+          </div>
+          <div class="filter-group">
+            <h3>Type</h3>
+            <div id="type-filters"></div>
+          </div>
+          <div class="filter-group">
+            <h3>Country</h3>
+            <select id="country-filter"><option value="">All countries</option></select>
+          </div>
+          <div class="filter-group">
+            <h3>Operator</h3>
+            <select id="operator-filter"><option value="">All operators</option></select>
+          </div>
+          <div class="filter-group">
+            <h3>Power capacity (MW)</h3>
+            <input id="min-mw" type="number" min="0" placeholder="min" />
+            <input id="max-mw" type="number" min="0" placeholder="max" />
+          </div>
+          <div class="filter-group">
+            <h3>Year opened</h3>
+            <input id="min-year" type="number" placeholder="from" />
+            <input id="max-year" type="number" placeholder="to" />
+          </div>
+          <button id="reset-filters">Reset filters</button>
+          <button id="share-link">Copy shareable link</button>
+        </div>
+        <div id="map"></div>
+        <div id="detail-panel" class="hidden"></div>
+      </section>
+
+      <section id="view-dashboard" class="view">
+        <h2>Global dashboard</h2>
+        <div id="headline" class="cards"></div>
+        <div class="chart-grid">
+          <div><h3>Sites by type</h3><div id="chart-type" class="barchart"></div></div>
+          <div><h3>Sites by confidence tier</h3><div id="chart-tier" class="barchart"></div></div>
+          <div><h3>Growth over time (year opened)</h3><div id="chart-year" class="barchart"></div></div>
+          <div><h3>Top 20 operators</h3><div id="chart-operators" class="barchart"></div></div>
+        </div>
+        <h2>Largest sites by known power capacity</h2>
+        <div class="table-wrapper"><table id="largest-table"></table></div>
+      </section>
+
+      <section id="view-countries" class="view">
+        <h2>Country statistics</h2>
+        <div class="table-wrapper"><table id="country-table"></table></div>
+        <div id="country-detail"></div>
+      </section>
+
+      <section id="view-compare" class="view">
+        <h2>Compare two countries</h2>
+        <div class="compare-picker">
+          <select id="compare-a"></select>
+          <select id="compare-b"></select>
+        </div>
+        <div class="table-wrapper"><table id="compare-table"></table></div>
+      </section>
+
+      <section id="view-about" class="view prose">
+        <h2>Data &amp; methodology</h2>
+        <p>This dataset is research-driven and open. Every record lists its sources; missing values are explicit <code>null</code> and are never invented. Estimated values are flagged with <code>*_estimated: true</code>.</p>
+        <h3>Confidence tiers</h3>
+        <ul>
+          <li><span class="dot" style="background:#22c55e"></span> <strong>Confirmed</strong> — operational and officially documented (operator page, regulatory filing, OSM/Wikidata with coordinates).</li>
+          <li><span class="dot" style="background:#f59e0b"></span> <strong>Probable</strong> — strong evidence the site exists or is under construction, but not officially confirmed at that exact location (news, satellite imagery, permits).</li>
+          <li><span class="dot" style="background:#a855f7"></span> <strong>Theorized</strong> — announced, rumoured, planned or speculative (e.g. proposed AI mega-campuses).</li>
+        </ul>
+        <h3>Sources</h3>
+        <ul>
+          <li>OpenStreetMap (Overpass API): <code>telecom=data_center</code>, <code>building=data_center</code></li>
+          <li>Wikidata SPARQL: items that are an instance of <em>data center</em> (Q671224) with coordinates</li>
+          <li>Curated research: hyperscaler region pages (AWS, Azure, Google Cloud, Oracle, IBM, Alibaba), colocation providers (Equinix, Digital Realty, NTT, Switch, QTS, Vantage, CyrusOne, Iron Mountain, STACK, Colt, Global Switch, DATA4, Aruba…), Meta/Apple/xAI/OpenAI campuses, government/HPC sites and crypto-mining facilities.</li>
+        </ul>
+        <h3>Limitations</h3>
+        <ul>
+          <li>Cloud <em>region</em> markers are placed at the region's primary metro area; a region spans multiple availability zones whose exact locations are not public.</li>
+          <li>Power capacity is only shown when publicly reported; most sites have <code>null</code>. Headline MW totals are therefore a lower bound.</li>
+          <li>OSM coverage is community-driven and uneven across countries.</li>
+        </ul>
+        <p>Found an error or a missing site? See <a href="https://github.com/Zer0codestuff/datacenter-map/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "datacenter-map",
+  "version": "1.0.0",
+  "description": "Interactive world map of every known data center, color-coded by confidence tier",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data": "python3 scripts/fetch_osm.py && python3 scripts/fetch_wikidata.py && python3 scripts/curated_seed.py && python3 scripts/build_dataset.py"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
