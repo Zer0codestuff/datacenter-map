@@ -1,0 +1,3761 @@
+[
+ {
+  "seed_id": "curated-0000",
+  "name": "AWS US East (N. Virginia)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 39.0,
+  "lng": -77.5,
+  "country": "US",
+  "city": "Ashburn, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2006,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0001",
+  "name": "AWS US East (Ohio)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 40.0,
+  "lng": -83.0,
+  "country": "US",
+  "city": "Columbus, Ohio",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0002",
+  "name": "AWS US West (N. California)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 37.4,
+  "lng": -122.1,
+  "country": "US",
+  "city": "San Francisco Bay Area, California",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0003",
+  "name": "AWS US West (Oregon)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 45.6,
+  "lng": -122.8,
+  "country": "US",
+  "city": "Portland, Oregon",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2011,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0004",
+  "name": "AWS Canada (Central)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 45.5,
+  "lng": -73.6,
+  "country": "CA",
+  "city": "Montreal, Quebec",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0005",
+  "name": "AWS Canada West (Calgary)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 51.0,
+  "lng": -114.1,
+  "country": "CA",
+  "city": "Calgary, Alberta",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0006",
+  "name": "AWS South America (Sao Paulo)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": -23.55,
+  "lng": -46.63,
+  "country": "BR",
+  "city": "Sao Paulo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2011,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0007",
+  "name": "AWS Europe (Ireland)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 53.35,
+  "lng": -6.26,
+  "country": "IE",
+  "city": "Dublin",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2007,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0008",
+  "name": "AWS Europe (Frankfurt)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0009",
+  "name": "AWS Europe (London)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 51.5,
+  "lng": -0.13,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0010",
+  "name": "AWS Europe (Paris)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 48.86,
+  "lng": 2.35,
+  "country": "FR",
+  "city": "Paris",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0011",
+  "name": "AWS Europe (Stockholm)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 59.33,
+  "lng": 18.07,
+  "country": "SE",
+  "city": "Stockholm",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0012",
+  "name": "AWS Europe (Milan)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 45.46,
+  "lng": 9.19,
+  "country": "IT",
+  "city": "Milan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0013",
+  "name": "AWS Europe (Spain)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 41.65,
+  "lng": -0.89,
+  "country": "ES",
+  "city": "Zaragoza",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0014",
+  "name": "AWS Europe (Zurich)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 47.37,
+  "lng": 8.54,
+  "country": "CH",
+  "city": "Zurich",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0015",
+  "name": "AWS Asia Pacific (Tokyo)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2011,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0016",
+  "name": "AWS Asia Pacific (Osaka)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 34.69,
+  "lng": 135.5,
+  "country": "JP",
+  "city": "Osaka",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0017",
+  "name": "AWS Asia Pacific (Seoul)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 37.57,
+  "lng": 126.98,
+  "country": "KR",
+  "city": "Seoul",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0018",
+  "name": "AWS Asia Pacific (Singapore)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 1.35,
+  "lng": 103.82,
+  "country": "SG",
+  "city": "Singapore",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0019",
+  "name": "AWS Asia Pacific (Sydney)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": -33.87,
+  "lng": 151.21,
+  "country": "AU",
+  "city": "Sydney",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2012,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0020",
+  "name": "AWS Asia Pacific (Melbourne)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": -37.81,
+  "lng": 144.96,
+  "country": "AU",
+  "city": "Melbourne",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0021",
+  "name": "AWS Asia Pacific (Mumbai)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 19.08,
+  "lng": 72.88,
+  "country": "IN",
+  "city": "Mumbai",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0022",
+  "name": "AWS Asia Pacific (Hyderabad)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 17.38,
+  "lng": 78.49,
+  "country": "IN",
+  "city": "Hyderabad",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0023",
+  "name": "AWS Asia Pacific (Hong Kong)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 22.32,
+  "lng": 114.17,
+  "country": "HK",
+  "city": "Hong Kong",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0024",
+  "name": "AWS Asia Pacific (Jakarta)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": -6.21,
+  "lng": 106.85,
+  "country": "ID",
+  "city": "Jakarta",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0025",
+  "name": "AWS Middle East (Bahrain)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 26.23,
+  "lng": 50.58,
+  "country": "BH",
+  "city": "Bahrain",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0026",
+  "name": "AWS Middle East (UAE)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 25.2,
+  "lng": 55.27,
+  "country": "AE",
+  "city": "Dubai / Abu Dhabi",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0027",
+  "name": "AWS Israel (Tel Aviv)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 32.08,
+  "lng": 34.78,
+  "country": "IL",
+  "city": "Tel Aviv",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0028",
+  "name": "AWS Africa (Cape Town)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": -33.92,
+  "lng": 18.42,
+  "country": "ZA",
+  "city": "Cape Town",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0029",
+  "name": "AWS Mexico (Central)",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 20.59,
+  "lng": -100.39,
+  "country": "MX",
+  "city": "Queretaro",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2025,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0030",
+  "name": "AWS Europe (Germany) Sovereign Cloud",
+  "operator": "Amazon Web Services",
+  "owner": null,
+  "lat": 52.52,
+  "lng": 13.4,
+  "country": "DE",
+  "city": "Brandenburg",
+  "tier": "theorized",
+  "status": "planned",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://aws.amazon.com/about-aws/global-infrastructure/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0031",
+  "name": "Azure East US",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 37.37,
+  "lng": -79.18,
+  "country": "US",
+  "city": "Boydton, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0032",
+  "name": "Azure East US 2",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 36.82,
+  "lng": -78.4,
+  "country": "US",
+  "city": "Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0033",
+  "name": "Azure West US 2",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 47.23,
+  "lng": -119.85,
+  "country": "US",
+  "city": "Quincy, Washington",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0034",
+  "name": "Azure West US 3",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 33.45,
+  "lng": -112.07,
+  "country": "US",
+  "city": "Phoenix, Arizona",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0035",
+  "name": "Azure Central US",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 41.59,
+  "lng": -93.62,
+  "country": "US",
+  "city": "Des Moines, Iowa",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0036",
+  "name": "Azure North Central US",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 41.88,
+  "lng": -87.63,
+  "country": "US",
+  "city": "Chicago, Illinois",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0037",
+  "name": "Azure South Central US",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 29.42,
+  "lng": -98.49,
+  "country": "US",
+  "city": "San Antonio, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0038",
+  "name": "Azure North Europe",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 53.35,
+  "lng": -6.26,
+  "country": "IE",
+  "city": "Dublin",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0039",
+  "name": "Azure West Europe",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 52.37,
+  "lng": 4.9,
+  "country": "NL",
+  "city": "Amsterdam",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0040",
+  "name": "Azure UK South",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 51.5,
+  "lng": -0.13,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0041",
+  "name": "Azure Germany West Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0042",
+  "name": "Azure France Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 48.86,
+  "lng": 2.35,
+  "country": "FR",
+  "city": "Paris",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0043",
+  "name": "Azure Sweden Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 60.67,
+  "lng": 17.14,
+  "country": "SE",
+  "city": "Gavle",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0044",
+  "name": "Azure Norway East",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 59.91,
+  "lng": 10.75,
+  "country": "NO",
+  "city": "Oslo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0045",
+  "name": "Azure Switzerland North",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 47.37,
+  "lng": 8.54,
+  "country": "CH",
+  "city": "Zurich",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0046",
+  "name": "Azure Italy North",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 45.46,
+  "lng": 9.19,
+  "country": "IT",
+  "city": "Milan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0047",
+  "name": "Azure Spain Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 40.42,
+  "lng": -3.7,
+  "country": "ES",
+  "city": "Madrid",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0048",
+  "name": "Azure Poland Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 52.23,
+  "lng": 21.01,
+  "country": "PL",
+  "city": "Warsaw",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0049",
+  "name": "Azure Southeast Asia",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 1.35,
+  "lng": 103.82,
+  "country": "SG",
+  "city": "Singapore",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0050",
+  "name": "Azure East Asia",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 22.32,
+  "lng": 114.17,
+  "country": "HK",
+  "city": "Hong Kong",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0051",
+  "name": "Azure Japan East",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0052",
+  "name": "Azure Australia East",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": -33.87,
+  "lng": 151.21,
+  "country": "AU",
+  "city": "Sydney",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0053",
+  "name": "Azure Central India",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 18.52,
+  "lng": 73.86,
+  "country": "IN",
+  "city": "Pune",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2015,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0054",
+  "name": "Azure Korea Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 37.57,
+  "lng": 126.98,
+  "country": "KR",
+  "city": "Seoul",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0055",
+  "name": "Azure UAE North",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 25.2,
+  "lng": 55.27,
+  "country": "AE",
+  "city": "Dubai",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0056",
+  "name": "Azure South Africa North",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": -26.2,
+  "lng": 28.05,
+  "country": "ZA",
+  "city": "Johannesburg",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0057",
+  "name": "Azure Brazil South",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": -23.55,
+  "lng": -46.63,
+  "country": "BR",
+  "city": "Sao Paulo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0058",
+  "name": "Azure Canada Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 43.65,
+  "lng": -79.38,
+  "country": "CA",
+  "city": "Toronto",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0059",
+  "name": "Azure Qatar Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 25.29,
+  "lng": 51.53,
+  "country": "QA",
+  "city": "Doha",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0060",
+  "name": "Azure Israel Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 32.08,
+  "lng": 34.78,
+  "country": "IL",
+  "city": "Tel Aviv",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0061",
+  "name": "Azure Mexico Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 20.59,
+  "lng": -100.39,
+  "country": "MX",
+  "city": "Queretaro",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0062",
+  "name": "Azure New Zealand North",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": -36.85,
+  "lng": 174.76,
+  "country": "NZ",
+  "city": "Auckland",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0063",
+  "name": "Azure Indonesia Central",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": -6.21,
+  "lng": 106.85,
+  "country": "ID",
+  "city": "Jakarta",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2025,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0064",
+  "name": "Azure Malaysia West",
+  "operator": "Microsoft Azure",
+  "owner": null,
+  "lat": 3.14,
+  "lng": 101.69,
+  "country": "MY",
+  "city": "Kuala Lumpur",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2025,
+  "sources": [
+   {
+    "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0065",
+  "name": "Google Cloud us-east1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 33.2,
+  "lng": -80.0,
+  "country": "US",
+  "city": "Moncks Corner, South Carolina",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0066",
+  "name": "Google Cloud us-east4",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 39.0,
+  "lng": -77.5,
+  "country": "US",
+  "city": "Ashburn, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0067",
+  "name": "Google Cloud us-central1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 41.26,
+  "lng": -95.86,
+  "country": "US",
+  "city": "Council Bluffs, Iowa",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0068",
+  "name": "Google Cloud us-west1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 45.59,
+  "lng": -121.18,
+  "country": "US",
+  "city": "The Dalles, Oregon",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2006,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0069",
+  "name": "Google Cloud europe-west1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 50.45,
+  "lng": 3.82,
+  "country": "BE",
+  "city": "St. Ghislain",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0070",
+  "name": "Google Cloud europe-west2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 51.5,
+  "lng": -0.13,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0071",
+  "name": "Google Cloud europe-west3",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0072",
+  "name": "Google Cloud europe-west4",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 53.45,
+  "lng": 6.83,
+  "country": "NL",
+  "city": "Eemshaven",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0073",
+  "name": "Google Cloud europe-north1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 60.57,
+  "lng": 27.19,
+  "country": "FI",
+  "city": "Hamina",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0074",
+  "name": "Google Cloud europe-west8",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 45.46,
+  "lng": 9.19,
+  "country": "IT",
+  "city": "Milan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0075",
+  "name": "Google Cloud europe-west9",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 48.86,
+  "lng": 2.35,
+  "country": "FR",
+  "city": "Paris",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0076",
+  "name": "Google Cloud europe-west10",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 52.52,
+  "lng": 13.4,
+  "country": "DE",
+  "city": "Berlin",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0077",
+  "name": "Google Cloud europe-west12",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 45.07,
+  "lng": 7.69,
+  "country": "IT",
+  "city": "Turin",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0078",
+  "name": "Google Cloud europe-southwest1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 40.42,
+  "lng": -3.7,
+  "country": "ES",
+  "city": "Madrid",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0079",
+  "name": "Google Cloud asia-east1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 24.08,
+  "lng": 120.54,
+  "country": "TW",
+  "city": "Changhua County",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2013,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0080",
+  "name": "Google Cloud asia-east2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 22.32,
+  "lng": 114.17,
+  "country": "HK",
+  "city": "Hong Kong",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0081",
+  "name": "Google Cloud asia-northeast1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0082",
+  "name": "Google Cloud asia-northeast2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 34.69,
+  "lng": 135.5,
+  "country": "JP",
+  "city": "Osaka",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0083",
+  "name": "Google Cloud asia-northeast3",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 37.57,
+  "lng": 126.98,
+  "country": "KR",
+  "city": "Seoul",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0084",
+  "name": "Google Cloud asia-southeast1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 1.35,
+  "lng": 103.82,
+  "country": "SG",
+  "city": "Singapore (Jurong West)",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2013,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0085",
+  "name": "Google Cloud asia-southeast2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -6.21,
+  "lng": 106.85,
+  "country": "ID",
+  "city": "Jakarta",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0086",
+  "name": "Google Cloud asia-south1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 19.08,
+  "lng": 72.88,
+  "country": "IN",
+  "city": "Mumbai",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0087",
+  "name": "Google Cloud asia-south2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 28.61,
+  "lng": 77.21,
+  "country": "IN",
+  "city": "Delhi",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0088",
+  "name": "Google Cloud australia-southeast1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -33.87,
+  "lng": 151.21,
+  "country": "AU",
+  "city": "Sydney",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0089",
+  "name": "Google Cloud australia-southeast2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -37.81,
+  "lng": 144.96,
+  "country": "AU",
+  "city": "Melbourne",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0090",
+  "name": "Google Cloud southamerica-east1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -23.55,
+  "lng": -46.63,
+  "country": "BR",
+  "city": "Sao Paulo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0091",
+  "name": "Google Cloud southamerica-west1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -33.45,
+  "lng": -70.67,
+  "country": "CL",
+  "city": "Santiago",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0092",
+  "name": "Google Cloud northamerica-northeast1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 45.5,
+  "lng": -73.6,
+  "country": "CA",
+  "city": "Montreal",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0093",
+  "name": "Google Cloud me-west1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 32.08,
+  "lng": 34.78,
+  "country": "IL",
+  "city": "Tel Aviv",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0094",
+  "name": "Google Cloud me-central1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 25.29,
+  "lng": 51.53,
+  "country": "QA",
+  "city": "Doha",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0095",
+  "name": "Google Cloud me-central2",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": 25.2,
+  "lng": 55.27,
+  "country": "AE",
+  "city": "Dubai",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0096",
+  "name": "Google Cloud africa-south1",
+  "operator": "Google Cloud",
+  "owner": null,
+  "lat": -26.2,
+  "lng": 28.05,
+  "country": "ZA",
+  "city": "Johannesburg",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://cloud.google.com/about/locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0097",
+  "name": "Oracle Cloud Ashburn",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 39.0,
+  "lng": -77.5,
+  "country": "US",
+  "city": "Ashburn, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0098",
+  "name": "Oracle Cloud Phoenix",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 33.45,
+  "lng": -112.07,
+  "country": "US",
+  "city": "Phoenix, Arizona",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0099",
+  "name": "Oracle Cloud Frankfurt",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0100",
+  "name": "Oracle Cloud London",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 51.5,
+  "lng": -0.13,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0101",
+  "name": "Oracle Cloud Tokyo",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0102",
+  "name": "Oracle Cloud Sao Paulo",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": -23.55,
+  "lng": -46.63,
+  "country": "BR",
+  "city": "Sao Paulo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0103",
+  "name": "Oracle Cloud Jeddah",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 21.49,
+  "lng": 39.19,
+  "country": "SA",
+  "city": "Jeddah",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0104",
+  "name": "Oracle Cloud Jerusalem",
+  "operator": "Oracle Cloud",
+  "owner": null,
+  "lat": 31.77,
+  "lng": 35.21,
+  "country": "IL",
+  "city": "Jerusalem",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://www.oracle.com/cloud/data-regions/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0105",
+  "name": "IBM Cloud Dallas",
+  "operator": "IBM Cloud",
+  "owner": null,
+  "lat": 32.78,
+  "lng": -96.8,
+  "country": "US",
+  "city": "Dallas, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.ibm.com/cloud/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0106",
+  "name": "IBM Cloud Frankfurt",
+  "operator": "IBM Cloud",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.ibm.com/cloud/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0107",
+  "name": "IBM Cloud Tokyo",
+  "operator": "IBM Cloud",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.ibm.com/cloud/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0108",
+  "name": "IBM Cloud Sao Paulo",
+  "operator": "IBM Cloud",
+  "owner": null,
+  "lat": -23.55,
+  "lng": -46.63,
+  "country": "BR",
+  "city": "Sao Paulo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.ibm.com/cloud/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0109",
+  "name": "Alibaba Cloud Hangzhou",
+  "operator": "Alibaba Cloud",
+  "owner": null,
+  "lat": 30.27,
+  "lng": 120.16,
+  "country": "CN",
+  "city": "Hangzhou",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2011,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0110",
+  "name": "Alibaba Cloud Beijing",
+  "operator": "Alibaba Cloud",
+  "owner": null,
+  "lat": 39.9,
+  "lng": 116.4,
+  "country": "CN",
+  "city": "Beijing",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0111",
+  "name": "Alibaba Cloud Shenzhen",
+  "operator": "Alibaba Cloud",
+  "owner": null,
+  "lat": 22.54,
+  "lng": 114.06,
+  "country": "CN",
+  "city": "Shenzhen",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0112",
+  "name": "Alibaba Cloud Singapore",
+  "operator": "Alibaba Cloud",
+  "owner": null,
+  "lat": 1.35,
+  "lng": 103.82,
+  "country": "SG",
+  "city": "Singapore",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2015,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0113",
+  "name": "Alibaba Cloud Frankfurt",
+  "operator": "Alibaba Cloud",
+  "owner": null,
+  "lat": 50.11,
+  "lng": 8.68,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0114",
+  "name": "Tencent Cloud Guangzhou",
+  "operator": "Tencent Cloud",
+  "owner": null,
+  "lat": 23.13,
+  "lng": 113.26,
+  "country": "CN",
+  "city": "Guangzhou",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0115",
+  "name": "Huawei Cloud Gui'an",
+  "operator": "Huawei Cloud",
+  "owner": null,
+  "lat": 26.43,
+  "lng": 106.6,
+  "country": "CN",
+  "city": "Guiyang, Guizhou",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/global-locations",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0116",
+  "name": "Meta Prineville Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 44.29,
+  "lng": -120.83,
+  "country": "US",
+  "city": "Prineville, Oregon",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2011,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0117",
+  "name": "Meta Forest City Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 35.33,
+  "lng": -81.87,
+  "country": "US",
+  "city": "Forest City, North Carolina",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2012,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0118",
+  "name": "Meta Altoona Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 41.65,
+  "lng": -93.5,
+  "country": "US",
+  "city": "Altoona, Iowa",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0119",
+  "name": "Meta Lulea Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 65.58,
+  "lng": 22.15,
+  "country": "SE",
+  "city": "Lulea",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2013,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0120",
+  "name": "Meta Odense Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 55.4,
+  "lng": 10.39,
+  "country": "DK",
+  "city": "Odense",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0121",
+  "name": "Meta Clonee Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 53.41,
+  "lng": -6.44,
+  "country": "IE",
+  "city": "Clonee, County Meath",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0122",
+  "name": "Meta Eagle Mountain Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 40.31,
+  "lng": -112.0,
+  "country": "US",
+  "city": "Eagle Mountain, Utah",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0123",
+  "name": "Meta Mesa Data Center",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 33.42,
+  "lng": -111.83,
+  "country": "US",
+  "city": "Mesa, Arizona",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2021,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0124",
+  "name": "Meta Hyperion (Richland Parish)",
+  "operator": "Meta",
+  "owner": null,
+  "lat": 32.4,
+  "lng": -91.75,
+  "country": "US",
+  "city": "Richland Parish, Louisiana",
+  "tier": "probable",
+  "status": "under construction",
+  "type": "ai training",
+  "power_capacity_mw": 2000,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://datacenters.atmeta.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0125",
+  "name": "Apple Maiden Data Center",
+  "operator": "Apple",
+  "owner": null,
+  "lat": 35.58,
+  "lng": -81.26,
+  "country": "US",
+  "city": "Maiden, North Carolina",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://www.apple.com/environment/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0126",
+  "name": "Apple Reno Data Center",
+  "operator": "Apple",
+  "owner": null,
+  "lat": 39.53,
+  "lng": -119.81,
+  "country": "US",
+  "city": "Reno, Nevada",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2012,
+  "sources": [
+   {
+    "url": "https://www.apple.com/environment/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0127",
+  "name": "Apple Viborg Data Center",
+  "operator": "Apple",
+  "owner": null,
+  "lat": 56.45,
+  "lng": 9.4,
+  "country": "DK",
+  "city": "Viborg",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://www.apple.com/environment/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0128",
+  "name": "Apple Mesa Data Center",
+  "operator": "Apple",
+  "owner": null,
+  "lat": 33.42,
+  "lng": -111.83,
+  "country": "US",
+  "city": "Mesa, Arizona",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.apple.com/environment/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0129",
+  "name": "xAI Colossus",
+  "operator": "xAI",
+  "owner": null,
+  "lat": 35.15,
+  "lng": -90.05,
+  "country": "US",
+  "city": "Memphis, Tennessee",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "ai training",
+  "power_capacity_mw": 300,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://x.ai/news",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0130",
+  "name": "OpenAI/Microsoft Stargate Abilene",
+  "operator": "OpenAI / Oracle / Crusoe",
+  "owner": null,
+  "lat": 32.45,
+  "lng": -99.73,
+  "country": "US",
+  "city": "Abilene, Texas",
+  "tier": "probable",
+  "status": "under construction",
+  "type": "ai training",
+  "power_capacity_mw": 1200,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://openai.com/index/announcing-the-stargate-project/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0131",
+  "name": "Switch Citadel Campus",
+  "operator": "Switch",
+  "owner": null,
+  "lat": 39.53,
+  "lng": -119.75,
+  "country": "US",
+  "city": "Tahoe Reno, Nevada",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": 650,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.switch.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0132",
+  "name": "Switch Core Campus (Las Vegas)",
+  "operator": "Switch",
+  "owner": null,
+  "lat": 36.17,
+  "lng": -115.14,
+  "country": "US",
+  "city": "Las Vegas, Nevada",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2008,
+  "sources": [
+   {
+    "url": "https://www.switch.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0133",
+  "name": "Switch Pyramid Campus",
+  "operator": "Switch",
+  "owner": null,
+  "lat": 42.96,
+  "lng": -85.67,
+  "country": "US",
+  "city": "Grand Rapids, Michigan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.switch.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0134",
+  "name": "QTS Atlanta-Metro (Suwanee)",
+  "operator": "QTS Realty Trust",
+  "owner": null,
+  "lat": 34.05,
+  "lng": -84.07,
+  "country": "US",
+  "city": "Suwanee, Georgia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://www.qtsdatacenters.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0135",
+  "name": "Vantage V1 Campus Santa Clara",
+  "operator": "Vantage Data Centers",
+  "owner": null,
+  "lat": 37.35,
+  "lng": -121.95,
+  "country": "US",
+  "city": "Santa Clara, California",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2010,
+  "sources": [
+   {
+    "url": "https://vantage-dc.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0136",
+  "name": "CyrusOne Carrollton",
+  "operator": "CyrusOne",
+  "owner": null,
+  "lat": 32.95,
+  "lng": -96.89,
+  "country": "US",
+  "city": "Carrollton, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2007,
+  "sources": [
+   {
+    "url": "https://www.cyrusone.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0137",
+  "name": "Digital Realty Ashburn Campus",
+  "operator": "Digital Realty",
+  "owner": null,
+  "lat": 39.0,
+  "lng": -77.46,
+  "country": "US",
+  "city": "Ashburn, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2005,
+  "sources": [
+   {
+    "url": "https://www.digitalrealty.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0138",
+  "name": "Equinix DC2 (Ashburn)",
+  "operator": "Equinix",
+  "owner": null,
+  "lat": 39.02,
+  "lng": -77.46,
+  "country": "US",
+  "city": "Ashburn, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 1999,
+  "sources": [
+   {
+    "url": "https://www.equinix.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0139",
+  "name": "Equinix FR2 (Frankfurt)",
+  "operator": "Equinix",
+  "owner": null,
+  "lat": 50.1,
+  "lng": 8.63,
+  "country": "DE",
+  "city": "Frankfurt",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2000,
+  "sources": [
+   {
+    "url": "https://www.equinix.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0140",
+  "name": "Equinix SG1 (Singapore)",
+  "operator": "Equinix",
+  "owner": null,
+  "lat": 1.32,
+  "lng": 103.89,
+  "country": "SG",
+  "city": "Singapore",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2002,
+  "sources": [
+   {
+    "url": "https://www.equinix.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0141",
+  "name": "Equinix LD4 (Slough)",
+  "operator": "Equinix",
+  "owner": null,
+  "lat": 51.52,
+  "lng": -0.62,
+  "country": "GB",
+  "city": "Slough",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2007,
+  "sources": [
+   {
+    "url": "https://www.equinix.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0142",
+  "name": "Equinix TY2 (Tokyo)",
+  "operator": "Equinix",
+  "owner": null,
+  "lat": 35.65,
+  "lng": 139.75,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2000,
+  "sources": [
+   {
+    "url": "https://www.equinix.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0143",
+  "name": "NTT Fukuoka 1 / Osaka campuses",
+  "operator": "NTT Communications",
+  "owner": null,
+  "lat": 35.68,
+  "lng": 139.69,
+  "country": "JP",
+  "city": "Tokyo",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.global.ntt/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0144",
+  "name": "Iron Mountain Manassas (VA-1)",
+  "operator": "Iron Mountain",
+  "owner": null,
+  "lat": 38.75,
+  "lng": -77.48,
+  "country": "US",
+  "city": "Manassas, Virginia",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.ironmountain.com/data-centers",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0145",
+  "name": "STACK INFRASTRUCTURE SVY01",
+  "operator": "STACK Infrastructure",
+  "owner": null,
+  "lat": 37.42,
+  "lng": -121.94,
+  "country": "US",
+  "city": "San Jose, California",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.stackinfra.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0146",
+  "name": "CoreSite LA1",
+  "operator": "CoreSite",
+  "owner": null,
+  "lat": 34.05,
+  "lng": -118.25,
+  "country": "US",
+  "city": "Los Angeles, California",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2001,
+  "sources": [
+   {
+    "url": "https://www.coresite.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0147",
+  "name": "Colt London 3",
+  "operator": "Colt Data Centre Services",
+  "owner": null,
+  "lat": 51.5,
+  "lng": -0.13,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.colt.net/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0148",
+  "name": "Global Switch London North",
+  "operator": "Global Switch",
+  "owner": null,
+  "lat": 51.53,
+  "lng": -0.02,
+  "country": "GB",
+  "city": "London",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 1999,
+  "sources": [
+   {
+    "url": "https://www.globalswitch.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0149",
+  "name": "Interxion PAR8 (Paris)",
+  "operator": "Digital Realty (Interxion)",
+  "owner": null,
+  "lat": 48.87,
+  "lng": 2.33,
+  "country": "FR",
+  "city": "Paris",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.interxion.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0150",
+  "name": "DATA4 Marcoussis Campus",
+  "operator": "DATA4",
+  "owner": null,
+  "lat": 48.64,
+  "lng": 2.23,
+  "country": "FR",
+  "city": "Marcoussis",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2006,
+  "sources": [
+   {
+    "url": "https://www.data4group.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0151",
+  "name": "Aruba Global Cloud Data Center IT3",
+  "operator": "Aruba S.p.A.",
+  "owner": null,
+  "lat": 45.48,
+  "lng": 9.12,
+  "country": "IT",
+  "city": "Arezzo / Milan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://www.aruba.it/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0152",
+  "name": "Teraco JB1 (Isando)",
+  "operator": "Teraco",
+  "owner": null,
+  "lat": -26.14,
+  "lng": 28.21,
+  "country": "ZA",
+  "city": "Johannesburg",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2009,
+  "sources": [
+   {
+    "url": "https://www.teraco.co.za/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0153",
+  "name": "NEXTDC S1 Sydney",
+  "operator": "NEXTDC",
+  "owner": null,
+  "lat": -33.87,
+  "lng": 151.2,
+  "country": "AU",
+  "city": "Sydney",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2013,
+  "sources": [
+   {
+    "url": "https://www.nextdc.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0154",
+  "name": "AirTrunk SYD1",
+  "operator": "AirTrunk",
+  "owner": null,
+  "lat": -33.8,
+  "lng": 151.0,
+  "country": "AU",
+  "city": "Sydney",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": 2017,
+  "sources": [
+   {
+    "url": "https://airtrunk.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0155",
+  "name": "STT GDC Singapore",
+  "operator": "ST Telemedia Global Data Centres",
+  "owner": null,
+  "lat": 1.35,
+  "lng": 103.82,
+  "country": "SG",
+  "city": "Singapore",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.sttelemediagdc.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0156",
+  "name": "Kao Data Campus (Harlow)",
+  "operator": "Kao Data",
+  "owner": null,
+  "lat": 51.77,
+  "lng": 0.11,
+  "country": "GB",
+  "city": "Harlow",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2018,
+  "sources": [
+   {
+    "url": "https://kaodata.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0157",
+  "name": "Verne Global Keflavik",
+  "operator": "Verne Global",
+  "owner": null,
+  "lat": 63.99,
+  "lng": -22.6,
+  "country": "IS",
+  "city": "Keflavik",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2012,
+  "sources": [
+   {
+    "url": "https://verneglobal.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0158",
+  "name": "Green Mountain DC1 (Rjukan)",
+  "operator": "Green Mountain",
+  "owner": null,
+  "lat": 59.88,
+  "lng": 8.59,
+  "country": "NO",
+  "city": "Rjukan",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2015,
+  "sources": [
+   {
+    "url": "https://greenmountain.no/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0159",
+  "name": "atNorth ICE01",
+  "operator": "atNorth",
+  "owner": null,
+  "lat": 64.15,
+  "lng": -21.95,
+  "country": "IS",
+  "city": "Reykjavik",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2012,
+  "sources": [
+   {
+    "url": "https://www.atnorth.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0160",
+  "name": "Bulk Infrastructure N01 (Kristiansand)",
+  "operator": "Bulk Infrastructure",
+  "owner": null,
+  "lat": 58.15,
+  "lng": 8.0,
+  "country": "NO",
+  "city": "Kristiansand",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2019,
+  "sources": [
+   {
+    "url": "https://bulkinfrastructure.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0161",
+  "name": "Echelon DUB10 (Clondalkin)",
+  "operator": "Echelon Data Centres",
+  "owner": null,
+  "lat": 53.32,
+  "lng": -6.4,
+  "country": "IE",
+  "city": "Dublin",
+  "tier": "probable",
+  "status": "under construction",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://echelondc.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0162",
+  "name": "TikTok Project Clover (Hamina)",
+  "operator": "TikTok / ByteDance",
+  "owner": null,
+  "lat": 60.57,
+  "lng": 27.19,
+  "country": "FI",
+  "city": "Hamina",
+  "tier": "probable",
+  "status": "under construction",
+  "type": "hyperscale",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://newsroom.tiktok.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0163",
+  "name": "CoreWeave Lancaster PA",
+  "operator": "CoreWeave",
+  "owner": null,
+  "lat": 40.04,
+  "lng": -76.31,
+  "country": "US",
+  "city": "Lancaster, Pennsylvania",
+  "tier": "probable",
+  "status": "under construction",
+  "type": "ai training",
+  "power_capacity_mw": null,
+  "year_opened": null,
+  "sources": [
+   {
+    "url": "https://www.coreweave.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0164",
+  "name": "Crusoe Abilene AI Campus",
+  "operator": "Crusoe",
+  "owner": null,
+  "lat": 32.45,
+  "lng": -99.73,
+  "country": "US",
+  "city": "Abilene, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "ai training",
+  "power_capacity_mw": null,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://crusoe.ai/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0165",
+  "name": "Marathon Digital Granbury",
+  "operator": "Marathon Digital Holdings",
+  "owner": null,
+  "lat": 32.44,
+  "lng": -97.79,
+  "country": "US",
+  "city": "Granbury, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "crypto mining",
+  "power_capacity_mw": 300,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://ir.mara.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0166",
+  "name": "Riot Platforms Rockdale",
+  "operator": "Riot Platforms",
+  "owner": null,
+  "lat": 30.65,
+  "lng": -97.0,
+  "country": "US",
+  "city": "Rockdale, Texas",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "crypto mining",
+  "power_capacity_mw": 700,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://www.riotplatforms.com/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0167",
+  "name": "Frontier (Oak Ridge National Laboratory)",
+  "operator": "US DOE / Oak Ridge NL",
+  "owner": null,
+  "lat": 35.93,
+  "lng": -84.31,
+  "country": "US",
+  "city": "Oak Ridge, Tennessee",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 30,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://www.olcf.ornl.gov/frontier/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0168",
+  "name": "El Capitan (Lawrence Livermore NL)",
+  "operator": "US DOE / LLNL",
+  "owner": null,
+  "lat": 37.69,
+  "lng": -121.7,
+  "country": "US",
+  "city": "Livermore, California",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 35,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://www.llnl.gov/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0169",
+  "name": "Aurora (Argonne National Laboratory)",
+  "operator": "US DOE / Argonne NL",
+  "owner": null,
+  "lat": 41.71,
+  "lng": -87.98,
+  "country": "US",
+  "city": "Lemont, Illinois",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 60,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://www.alcf.anl.gov/aurora",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0170",
+  "name": "Fugaku (RIKEN R-CCS)",
+  "operator": "RIKEN",
+  "owner": null,
+  "lat": 34.65,
+  "lng": 135.22,
+  "country": "JP",
+  "city": "Kobe",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 30,
+  "year_opened": 2020,
+  "sources": [
+   {
+    "url": "https://www.r-ccs.riken.jp/en/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0171",
+  "name": "LUMI (CSC Kajaani)",
+  "operator": "EuroHPC JU / CSC",
+  "owner": null,
+  "lat": 64.22,
+  "lng": 27.73,
+  "country": "FI",
+  "city": "Kajaani",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 8,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://www.lumi-supercomputer.eu/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0172",
+  "name": "Leonardo (CINECA Bologna)",
+  "operator": "EuroHPC JU / CINECA",
+  "owner": null,
+  "lat": 44.49,
+  "lng": 11.34,
+  "country": "IT",
+  "city": "Bologna",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 7,
+  "year_opened": 2022,
+  "sources": [
+   {
+    "url": "https://leonardo-supercomputer.cineca.eu/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0173",
+  "name": "MareNostrum 5 (Barcelona SC)",
+  "operator": "EuroHPC JU / BSC",
+  "owner": null,
+  "lat": 41.39,
+  "lng": 2.12,
+  "country": "ES",
+  "city": "Barcelona",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 4,
+  "year_opened": 2023,
+  "sources": [
+   {
+    "url": "https://www.bsc.es/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0174",
+  "name": "Jupiter (Forschungszentrum Julich)",
+  "operator": "EuroHPC JU / FZJ",
+  "owner": null,
+  "lat": 50.9,
+  "lng": 6.41,
+  "country": "DE",
+  "city": "Julich",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 15,
+  "year_opened": 2024,
+  "sources": [
+   {
+    "url": "https://www.fz-juelich.de/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0175",
+  "name": "TaihuLight (National SC Center Wuxi)",
+  "operator": "NRCPC",
+  "owner": null,
+  "lat": 31.55,
+  "lng": 120.27,
+  "country": "CN",
+  "city": "Wuxi",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 15,
+  "year_opened": 2016,
+  "sources": [
+   {
+    "url": "https://www.nsccwx.cn/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0176",
+  "name": "NSA Utah Data Center",
+  "operator": "National Security Agency",
+  "owner": null,
+  "lat": 40.43,
+  "lng": -111.93,
+  "country": "US",
+  "city": "Bluffdale, Utah",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "government",
+  "power_capacity_mw": 65,
+  "year_opened": 2014,
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Utah_Data_Center",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0177",
+  "name": "Bahnhof Pionen",
+  "operator": "Bahnhof",
+  "owner": null,
+  "lat": 59.31,
+  "lng": 18.07,
+  "country": "SE",
+  "city": "Stockholm",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "colocation",
+  "power_capacity_mw": null,
+  "year_opened": 2008,
+  "sources": [
+   {
+    "url": "https://www.bahnhof.net/",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ },
+ {
+  "seed_id": "curated-0178",
+  "name": "CERN Data Centre (Meyrin)",
+  "operator": "CERN",
+  "owner": null,
+  "lat": 46.23,
+  "lng": 6.05,
+  "country": "CH",
+  "city": "Meyrin, Geneva",
+  "tier": "confirmed",
+  "status": "operational",
+  "type": "hpc/supercomputer",
+  "power_capacity_mw": 3,
+  "year_opened": 1976,
+  "sources": [
+   {
+    "url": "https://home.cern/science/computing",
+    "retrieved": "2026-09-17"
+   }
+  ]
+ }
+]
