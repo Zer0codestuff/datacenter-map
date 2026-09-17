@@ -1,0 +1,3212 @@
+{
+ "generated": "2026-09-17T12:44:13.726696+00:00",
+ "total_sites": 4113,
+ "total_countries": 116,
+ "total_power_mw_known": 5422.0,
+ "sites_with_power_data": 17,
+ "by_type": {
+  "enterprise": 1910,
+  "hyperscale": 297,
+  "colocation": 1888,
+  "hpc/supercomputer": 10,
+  "ai training": 5,
+  "crypto mining": 2,
+  "government": 1
+ },
+ "by_tier": {
+  "confirmed": 4107,
+  "theorized": 1,
+  "probable": 5
+ },
+ "by_year": {
+  "1929": 1,
+  "1932": 1,
+  "1938": 1,
+  "1944": 1,
+  "1952": 2,
+  "1954": 1,
+  "1955": 1,
+  "1956": 1,
+  "1960": 1,
+  "1962": 3,
+  "1967": 1,
+  "1969": 1,
+  "1973": 1,
+  "1974": 2,
+  "1975": 1,
+  "1976": 2,
+  "1978": 1,
+  "1979": 1,
+  "1981": 2,
+  "1982": 2,
+  "1983": 1,
+  "1984": 3,
+  "1990": 2,
+  "1991": 1,
+  "1992": 1,
+  "1995": 1,
+  "1997": 1,
+  "1998": 1,
+  "1999": 4,
+  "2000": 7,
+  "2001": 2,
+  "2002": 5,
+  "2003": 2,
+  "2004": 1,
+  "2005": 3,
+  "2006": 5,
+  "2007": 4,
+  "2008": 6,
+  "2009": 9,
+  "2010": 12,
+  "2011": 6,
+  "2012": 8,
+  "2013": 7,
+  "2014": 11,
+  "2015": 12,
+  "2016": 15,
+  "2017": 27,
+  "2018": 14,
+  "2019": 18,
+  "2020": 19,
+  "2021": 16,
+  "2022": 21,
+  "2023": 20,
+  "2024": 17,
+  "2025": 6,
+  "2026": 2,
+  "2027": 3,
+  "2030": 1
+ },
+ "top_operators": [
+  {
+   "operator": "Amazon Web Services",
+   "count": 144
+  },
+  {
+   "operator": "Equinix",
+   "count": 113
+  },
+  {
+   "operator": "Digital Realty",
+   "count": 93
+  },
+  {
+   "operator": "NTT",
+   "count": 62
+  },
+  {
+   "operator": "Microsoft",
+   "count": 60
+  },
+  {
+   "operator": "Meta",
+   "count": 51
+  },
+  {
+   "operator": "Google",
+   "count": 43
+  },
+  {
+   "operator": "Flexential",
+   "count": 38
+  },
+  {
+   "operator": "Microsoft Azure",
+   "count": 34
+  },
+  {
+   "operator": "CyrusOne",
+   "count": 34
+  },
+  {
+   "operator": "Google Cloud",
+   "count": 32
+  },
+  {
+   "operator": "Quality Technology Services",
+   "count": 30
+  },
+  {
+   "operator": "Lumen Technologies",
+   "count": 22
+  },
+  {
+   "operator": "Bouygues Télécom",
+   "count": 21
+  },
+  {
+   "operator": "Vantage Data Centers",
+   "count": 21
+  },
+  {
+   "operator": "STACK Infrastructure",
+   "count": 17
+  },
+  {
+   "operator": "NorthC",
+   "count": 16
+  },
+  {
+   "operator": "Switch",
+   "count": 15
+  },
+  {
+   "operator": "Iron Mountain",
+   "count": 14
+  },
+  {
+   "operator": "Verizon",
+   "count": 14
+  }
+ ],
+ "countries": [
+  {
+   "code": "US",
+   "name": "United States",
+   "count": 1245,
+   "total_power_mw": 5340.0,
+   "power_known": 10,
+   "by_type": {
+    "enterprise": 552,
+    "colocation": 542,
+    "hyperscale": 140,
+    "hpc/supercomputer": 3,
+    "ai training": 5,
+    "crypto mining": 2,
+    "government": 1
+   },
+   "by_tier": {
+    "confirmed": 1242,
+    "probable": 3
+   },
+   "operators": {
+    "bigbyte.cc": 1,
+    "News-Press & Gazette Company": 1,
+    "Tishman": 1,
+    "Digital Realty": 46,
+    "True North Data Solutions": 1,
+    "4421.io": 1,
+    "American Telephone & Telegraph": 1,
+    "AT&T": 2,
+    "Amazon Web Services": 77,
+    "Actapio": 1,
+    "University of Minnesota": 1,
+    "AiNET": 2,
+    "Aligned": 5,
+    "Aligned Data Centers": 3,
+    "Alpha Innovations": 1,
+    "AngelTrax Mobile Video Surveillance Solutions": 1,
+    "Apple": 7,
+    "Ascent": 1,
+    "Ascent, LLC": 1,
+    "Atlas Power Holdings (ND) LLC": 1,
+    "US DOE / Argonne NL": 1,
+    "Microsoft Azure": 7,
+    "BNYM": 1,
+    "bt": 1,
+    "Bank of America": 1,
+    "Barclays": 2,
+    "Bell Canada": 1,
+    "Blockfusion": 1,
+    "Bloomberg": 1,
+    "Duke Libraries": 1,
+    "CSS Communications": 1,
+    "Microsoft": 19,
+    "Carrier Connect Data Solutions": 1,
+    "Centersquare": 12,
+    "Hydro-Québec": 1,
+    "Lumen Technologies": 15,
+    "CenturyLink": 2,
+    "Centurylink": 2,
+    "Dennis Sampier": 1,
+    "Chirisa Technology Parks": 1,
+    "Choctaw Nation of oklahoma": 1,
+    "CloudHQ": 6,
+    "Cogent Communications, Inc.": 1,
+    "Cologix": 7,
+    "Comcast": 2,
+    "Compass": 1,
+    "CoreSite": 13,
+    "CoreSpace": 1,
+    "CoreWeave": 1,
+    "Crane Data Centers Inc.": 1,
+    "Crown Castle Fiber": 1,
+    "Crusoe": 1,
+    "Csquare": 4,
+    "CyrusOne": 23,
+    "PowerHouse": 2,
+    "Cyxtera": 5,
+    "Quality Technology Services": 27,
+    "DLI ONE": 1,
+    "DartPoints": 7,
+    "Oregon Health & Science University": 1,
+    "DataBank": 7,
+    "Nebius": 1,
+    "Databank": 1,
+    "UChicago Argonne LLC": 1,
+    "Dataverge": 1,
+    "Data Center West, Inc.": 2,
+    "Digital Crossroad": 1,
+    "Digital Fortress, Inc": 2,
+    "Digital Fortress": 1,
+    "EdgeConneX": 8,
+    "Edged": 1,
+    "US DOE / LLNL": 1,
+    "Element Critical": 1,
+    "Encompass": 1,
+    "Equinix": 33,
+    "Evocative": 3,
+    "Expedient": 3,
+    "Meta": 40,
+    "The Church of Jesus Christ of Latter-day Saints": 1,
+    "Fiberhub": 1,
+    "Fidelity": 1,
+    "First National of Nebraska": 1,
+    "FirstLight": 3,
+    "Flexential": 38,
+    "Fort Rock Data Center": 1,
+    "US DOE / Oak Ridge NL": 1,
+    "Oak Ridge National Laboratory": 1,
+    "Washington University in St. Louis": 1,
+    "Alabama Supercomputer Authority": 1,
+    "GlobeNet": 1,
+    "Google": 27,
+    "Google Cloud": 4,
+    "Greenidge Generation Holdings Inc.": 1,
+    "H5 Data Centers": 3,
+    "H5": 3,
+    "Sandia National Laboratories": 1,
+    "University of Florida": 1,
+    "Hurricane Electric": 2,
+    "IBM Cloud": 1,
+    "Indiana University": 1,
+    "Phillips Exeter Academy": 1,
+    "Sabey Data Centers": 3,
+    "Involta": 1,
+    "Iron Mountain": 7,
+    "JPMorgan Chase": 2,
+    "SONM": 1,
+    "Lincoln Rackhouse": 1,
+    "Vodafone": 1,
+    "Sprint": 1,
+    "Marathon Digital Holdings": 1,
+    "Markley Group": 1,
+    "Merrill Lynch": 1,
+    "The Government of Ontario": 1,
+    "Yosemite Community College District": 1,
+    "Molina Healthcare": 1,
+    "University Corporation for Atmospheric Research": 1,
+    "National Security Agency": 1,
+    "NTT": 11,
+    "2CRSi": 1,
+    "nyse": 1,
+    "Netrality": 1,
+    "Unity Cable System": 1,
+    "Ntirety": 1,
+    "OVHcloud": 2,
+    "Clarkson University": 1,
+    "Cogent Communications": 1,
+    "Oracle Cloud": 3,
+    "Oppidan": 1,
+    "State of Oregon": 1,
+    "Oso Grande": 1,
+    "PSE&G": 1,
+    "Stayton Cooperative Telephone Company": 1,
+    "Patmos Hosting, Inc.": 1,
+    "Rowan Green Data LLC": 1,
+    "WE Energies": 1,
+    "Prime": 3,
+    "QTS Realty Trust": 1,
+    "Quicken Loans": 1,
+    "Royal Bank of Canada": 1,
+    "Rackspace": 1,
+    "Riot Platforms": 1,
+    "SAP": 1,
+    "SC": 1,
+    "SES": 1,
+    "STACK Infrastructure": 8,
+    "Syracuse University": 1,
+    "SV Colo": 1,
+    "ScaleMatrix": 1,
+    "City of Searcy": 1,
+    "GI Partners": 1,
+    "Serverfarm LLC.": 1,
+    "Serverfarm": 1,
+    "Siemens Digital Industries Software": 1,
+    "Skybox": 1,
+    "State of Montana": 1,
+    "Stream": 3,
+    "Stream Data Centers": 1,
+    "Switch": 11,
+    "T5 Data Centers": 2,
+    "Tata Communications": 1,
+    "TPx Communications": 1,
+    "Telehouse": 1,
+    "State of Tennessee": 1,
+    "Alco Properties": 1,
+    "The Putney School": 1,
+    "TierPoint": 6,
+    "Travelers Insurance": 1,
+    "UNM": 1,
+    "UNMH": 1,
+    "US Bitcoin": 1,
+    "US Signal": 2,
+    "United States Postal Service": 1,
+    "Union Pacific Railroad": 1,
+    "University of New Hampshire": 1,
+    "VISA": 1,
+    "Vantage Data Centers": 10,
+    "VentureData": 1,
+    "Verizon": 6,
+    "Verizon Business": 1,
+    "Verizon Wireless": 3,
+    "Vidéotron": 1,
+    "Tata": 1,
+    "Walmart": 1,
+    "West Wisconsin Telcom": 1,
+    "XO": 1,
+    "Yahoo": 1,
+    "fifteenfortyseven Critical Systems Realty": 1,
+    "xAI": 4
+   }
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom",
+   "count": 257,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 90,
+    "hyperscale": 7,
+    "colocation": 160
+   },
+   "by_tier": {
+    "confirmed": 257
+   },
+   "operators": {
+    "Amazon Web Services": 4,
+    "Ark Data Centres": 4,
+    "Asanti": 3,
+    "University of Southampton": 1,
+    "Microsoft Azure": 1,
+    "British Airways": 1,
+    "Bank Of America": 1,
+    "brightsolid": 1,
+    "BT": 1,
+    "CGI": 1,
+    "CSquare": 1,
+    "DXC UKI": 1,
+    "Cable & Wireless": 1,
+    "CapitaLand Ascendas REIT": 3,
+    "Centerprise International": 1,
+    "Centrilogic": 1,
+    "CityFibre": 1,
+    "Colt Data Centre Services": 5,
+    "CyrusOne": 3,
+    "CustodianDC": 1,
+    "HPE": 1,
+    "Dark Nebulae Ltd": 1,
+    "DataVita": 2,
+    "Datum": 1,
+    "TeleData": 1,
+    "Digital Realty": 8,
+    "Digital Space Group Limited": 1,
+    "EXA Infrastructure": 1,
+    "Pulsant": 7,
+    "Elasticity": 1,
+    "Equinix": 8,
+    "Global Switch": 3,
+    "Global Technical Realty": 1,
+    "Goldman Sachs": 1,
+    "Google Cloud": 1,
+    "Google": 1,
+    "Gravity Edge": 1,
+    "HSBC": 1,
+    "IBM": 1,
+    "IONOS": 1,
+    "IP House": 1,
+    "NYSE Euronext": 1,
+    "Internet Central": 1,
+    "Iron Mountain": 2,
+    "Kao Data": 4,
+    "Vodafone": 1,
+    "LDeX Group": 1,
+    "Lloyds Banking Group": 1,
+    "Lumen Technologies": 2,
+    "Lunar Digital": 1,
+    "Microsoft": 3,
+    "Morgan Stanley": 2,
+    "NTT": 5,
+    "Nationwide Building Society": 1,
+    "Netwise": 1,
+    "OVHcloud": 1,
+    "Options Technology Ltd.": 1,
+    "Oracle Cloud": 1,
+    "Positive Internet": 1,
+    "Pure DC": 1,
+    "NatWest Group": 1,
+    "Natwest Group": 1,
+    "Rackspace": 2,
+    "Redcentric": 5,
+    "SCC": 1,
+    "SSE": 1,
+    "Santander": 2,
+    "Serverfarm": 1,
+    "Serverhouse": 1,
+    "Six Degrees": 1,
+    "Sky UK": 1,
+    "Sota": 1,
+    "Sovereign Business Integration Group": 1,
+    "Tesco": 1,
+    "Stellanor Data Centers": 2,
+    "Stellanor": 1,
+    "Tata Communications": 2,
+    "Telehouse": 3,
+    "Telstra International": 1,
+    "Thales": 1,
+    "Getronics": 1,
+    "Cyberfort": 1,
+    "UBS": 1,
+    "US Air Force": 1,
+    "Galaxy Data Centers": 1,
+    "University of Oxford": 1,
+    "VIRTUS": 2,
+    "Vantage Data Centers": 2,
+    "The Bunker Secure Hosting Ltd": 1,
+    "Verizon": 2,
+    "Verizion": 1,
+    "Verne Global": 1,
+    "Virgin Media": 1,
+    "Virtus": 3,
+    "Vision 247": 1,
+    "University of Cambridge": 1,
+    "Yondr": 1,
+    "iomart": 1,
+    "nLighten UK Ltd": 1,
+    "nLighten": 2
+   }
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "count": 253,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 180,
+    "hyperscale": 3,
+    "enterprise": 70
+   },
+   "by_tier": {
+    "confirmed": 253
+   },
+   "operators": {
+    "ANSSI": 1,
+    "Amazon Web Services": 1,
+    "Airbus": 1,
+    "Alienor.net": 1,
+    "Allianz": 1,
+    "Microsoft Azure": 1,
+    "BNP Paribas": 4,
+    "Bouygues Telecom": 3,
+    "Bouygues Télécom": 15,
+    "MBDA France": 1,
+    "CloudHQ": 1,
+    "Université Clermont Auvergne": 1,
+    "Université Claude Bernard - Lyon 1": 1,
+    "MAIF;DARVA": 1,
+    "Cogent Communications": 1,
+    "Cogent Communications, Inc.": 1,
+    "Cogent": 4,
+    "Cogentco": 1,
+    "Colt Data Centre Services": 2,
+    "Crypteo": 1,
+    "DATA4": 3,
+    "Illiad": 1,
+    "Bluecom": 1,
+    "SOCIETE TECHNOLOGIE EXPLOITATION INFORMATIQUE": 1,
+    "Aqua Ray": 1,
+    "Artefact": 1,
+    "Atos": 1,
+    "Banque de France": 2,
+    "Completel": 1,
+    "Data17": 1,
+    "EDF": 3,
+    "Groupama": 2,
+    "Groupe Casino": 1,
+    "IBM": 4,
+    "IBO": 1,
+    "Orange": 8,
+    "Oxya": 1,
+    "RTE": 3,
+    "Natixis": 2,
+    "Société Generale": 1,
+    "Aix-Marseille Université": 1,
+    "THALES": 1,
+    "Direction des douanes": 1,
+    "Digital Realty": 7,
+    "ETIX": 3,
+    "Nexeren": 2,
+    "Equinix": 7,
+    "Euclyde": 2,
+    "Euro Information": 1,
+    "Euroclear": 2,
+    "IN2P3": 1,
+    "FDJ": 1,
+    "CELESTE": 1,
+    "Fingerprint Technologies": 1,
+    "France Travail DSI": 1,
+    "Free Pro (Ex. Jaguar Network - DCForData)": 2,
+    "Free Pro (Ex. Jaguar Network - DCforDATA)": 1,
+    "GTT": 1,
+    "Global Switch": 1,
+    "Google Cloud": 1,
+    "Orange Business": 1,
+    "Crédit Agricole": 2,
+    "ADISTA": 1,
+    "IFP": 1,
+    "Interoute": 2,
+    "Digital Realty (Interxion)": 2,
+    "LIFO": 1,
+    "Lumen Technologies": 2,
+    "Nation Data Center": 1,
+    "Switch": 1,
+    "OPCORE": 6,
+    "OVHcloud": 1,
+    "OpenStreetMap France": 1,
+    "Phocea DC": 1,
+    "RATP": 1,
+    "SFR": 12,
+    "SNCF": 1,
+    "France Télévisions": 2,
+    "Groupe Canal": 1,
+    "TV5MONDE": 1,
+    "Euronews": 1,
+    "Eurosport": 1,
+    "Groupe CANAL": 1,
+    "Groupe M6": 1,
+    "TDF": 3,
+    "TF1": 1,
+    "Sartel": 1,
+    "Scaleway": 1,
+    "SostraData": 1,
+    "orange": 1,
+    "Sungard AS": 1,
+    "Telehouse": 2,
+    "Thésée": 1,
+    "Verizon": 1,
+    "XL 360": 1,
+    "Zayo": 1,
+    "dc2scale": 1,
+    "nLighten France": 1,
+    "zColo France": 1
+   }
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "count": 236,
+   "total_power_mw": 15.0,
+   "power_known": 1,
+   "by_type": {
+    "colocation": 120,
+    "hyperscale": 8,
+    "enterprise": 107,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 235,
+    "theorized": 1
+   },
+   "operators": {
+    "1&1 Internet SE": 1,
+    "Amazon Web Services": 2,
+    "Advanced Mediomatrix": 1,
+    "Alibaba Cloud": 1,
+    "Artec": 1,
+    "Microsoft Azure": 1,
+    "Vantage Data Centers": 5,
+    "Bouygues Télécom": 1,
+    "IPB": 1,
+    "Colt Data Centre Services": 1,
+    "CyrusOne": 2,
+    "Service- und Rechenzentrum Deutel GmbH": 1,
+    "Euclyde Datacenters": 1,
+    "Sabey Data Centers": 1,
+    "MGEN": 1,
+    "CNRS": 1,
+    "Deutsche Rentenversicherung Bund": 1,
+    "GasLINE": 1,
+    "Digital Realty": 4,
+    "Energieversorgung Filstal": 1,
+    "EWE Netz GmbH": 1,
+    "EWE TEL GmbH": 1,
+    "EdgeConneX": 1,
+    "Equinix": 7,
+    "FIS-ASP GmbH": 1,
+    "Winthrop Technologies Ltd.": 1,
+    "Fiducia & GAD IT AG": 1,
+    "Steinbuch Centre for Computing": 1,
+    "Atruvia AG": 1,
+    "GRASS-MERKUR GmbH & Co. KG": 1,
+    "TU Braunschweig": 1,
+    "Universität Osnabrück": 1,
+    "GLS IT Services GmbH": 1,
+    "Global Switch": 1,
+    "Google Cloud": 2,
+    "Hansestadt Rostock": 1,
+    "Hetzner": 1,
+    "Contabo": 1,
+    "IBM Cloud": 1,
+    "Universität Rostock": 1,
+    "Interoute": 1,
+    "Iron Mountain": 2,
+    "JH-Computers GmbH": 1,
+    "Johannes Gutenberg-Universität Mainz": 1,
+    "EuroHPC JU / FZJ": 1,
+    "Kyndryl Deutschland GmbH": 2,
+    "Leitwerk Rechenzentren Appenweier/Lahr GmbH": 1,
+    "MK Netzdienste GmbH": 1,
+    "Maincubes": 2,
+    "Mittwald CM Service GmbH & Co. KG": 1,
+    "Deutsche Telekom AG": 1,
+    "NTT": 5,
+    "NetCologne": 1,
+    "NorthC": 5,
+    "OVHcloud": 2,
+    "prego. services GmbH": 1,
+    "Oracle Cloud": 1,
+    "PDV Systeme GmbH": 1,
+    "htp GmbH": 2,
+    "Cogent": 1,
+    "DOKOM Gesellschaft für Telekommunikation mbH": 1,
+    "Hochschul-IT-Zentrum": 1,
+    "AtlasEdge": 1,
+    "maincubes Holding & Service GmbH": 1,
+    "Stadt Münster": 1,
+    "STACK Infrastructure": 1,
+    "noris network": 2,
+    "Pfalzkom GmbH": 2,
+    "SAP SE": 1,
+    "SFR": 1,
+    "Universität Münster": 1,
+    "ENERVIE – Südwestfalen Energie und Wasser AG": 1,
+    "Deutsche Telekom": 3,
+    "T-Systems": 1,
+    "TE Connectivety": 1,
+    "Telehouse": 1,
+    "TelemaxX Telekommunikation GmbH": 5,
+    "Friedrich-Schiller-Universität Jena": 1,
+    "Universität Leipzig": 1,
+    "VegaSystems": 1,
+    "Verizon": 1,
+    "Heidelberg iT Management GmbH & Co. KG": 1,
+    "Wiit AG": 1,
+    "Yondr Group": 1,
+    "TNG Group": 1,
+    "euNetworks GmbH": 1,
+    "euNetworks": 1,
+    "Interwerk": 1,
+    "noris network AG": 3,
+    "servinga GmbH": 1
+   }
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "count": 182,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 5,
+    "colocation": 59,
+    "enterprise": 118
+   },
+   "by_tier": {
+    "confirmed": 182
+   },
+   "operators": {
+    "Amazon Web Services": 4,
+    "Aligned Data Centers, LLC": 1,
+    "Alpheus": 1,
+    "Microsoft Azure": 1,
+    "CHRISTUS Health": 1,
+    "Javier MArtinez Roemro": 1,
+    "Axtel": 1,
+    "Ascenty": 2,
+    "MTP": 1,
+    "Equinix": 2,
+    "KIO": 9,
+    "ODATA": 4,
+    "Triara": 2,
+    "CenturyLink": 1,
+    "CyrusOne": 4,
+    "DXC Technology": 2,
+    "DartPoints": 2,
+    "DirecTV": 2,
+    "Frost Bank": 1,
+    "GVTC": 1,
+    "Google": 2,
+    "H5 Data Centers": 1,
+    "HEB": 1,
+    "IONIC Digital": 1,
+    "WSMR": 1,
+    "Lowe's": 1,
+    "Lumen Technologies": 2,
+    "Marathon Digital Holdings": 1,
+    "Microsoft": 3,
+    "Quality Technology Services": 1,
+    "Skybox": 1,
+    "Switch": 1,
+    "Telmex": 1,
+    "National Security Agency": 1,
+    "Valero": 1,
+    "Vantage Data Centers": 2
+   }
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "count": 135,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 69,
+    "enterprise": 64,
+    "hyperscale": 2
+   },
+   "by_tier": {
+    "confirmed": 135
+   },
+   "operators": {
+    "Microsoft": 4,
+    "Microsoft Azure": 1,
+    "Bytesnet": 1,
+    "Cogent": 1,
+    "CyrusOne": 1,
+    "Data Beheer Groep": 1,
+    "Databarn Amsterdam B.V.": 1,
+    "Datacenter One NRW GmbH": 1,
+    "AtlasEdge": 1,
+    "Digital Realty": 8,
+    "EdgeConneX": 2,
+    "Equinix": 7,
+    "Eurofiber": 5,
+    "Eurofiber Cloud Infra": 1,
+    "Global Switch": 1,
+    "Google Cloud": 1,
+    "Google": 2,
+    "Greenhouse Datacenters": 1,
+    "Gyro Center": 1,
+    "Interconnect": 1,
+    "Digital Realty (Interxion)": 1,
+    "Iron Mountain": 1,
+    "KPN": 2,
+    "Kolo": 4,
+    "LeaseWeb": 2,
+    "NIKHEF": 1,
+    "NTT": 1,
+    "NorthC": 10,
+    "SSC-ICT": 1,
+    "Quality Technology Services": 2,
+    "Surfplanet GmbH": 1,
+    "Switch": 2,
+    "Verizon": 1
+   }
+  },
+  {
+   "code": "CN",
+   "name": "China",
+   "count": 126,
+   "total_power_mw": 15.0,
+   "power_known": 1,
+   "by_type": {
+    "enterprise": 105,
+    "colocation": 15,
+    "hyperscale": 5,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 126
+   },
+   "operators": {
+    "中国电信": 3,
+    "Alibaba Cloud": 3,
+    "Huawei Cloud": 1,
+    "Microsoft": 2,
+    "NTT": 1,
+    "NRCPC": 1,
+    "Tencent Cloud": 1,
+    "万国数据": 1,
+    "中国移动通信集团湖南有限公司": 1,
+    "韶关市职业综合高级中学": 1,
+    "中国移动": 1,
+    "山东联通青岛金家岭机房公司": 1,
+    "有孚": 1,
+    "武当云谷大数据科技有限公司": 1,
+    "江永县武警中队": 1,
+    "中国联通": 1
+   }
+  },
+  {
+   "code": "JP",
+   "name": "Japan",
+   "count": 115,
+   "total_power_mw": 30.0,
+   "power_known": 1,
+   "by_type": {
+    "enterprise": 37,
+    "hyperscale": 7,
+    "colocation": 70,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 115
+   },
+   "operators": {
+    "Amazon Web Services": 2,
+    "Microsoft Azure": 1,
+    "CTC": 1,
+    "Colt Data Centre Services": 1,
+    "Equinix": 4,
+    "RIKEN": 1,
+    "Google Cloud": 2,
+    "Google": 1,
+    "IBM Cloud": 1,
+    "IIJ": 1,
+    "カゴヤ・ジャパン株式会社": 1,
+    "KDDI / Telehouse": 6,
+    "Key Point": 1,
+    "MCデジタル・リアルティ": 1,
+    "NTT": 29,
+    "南日本情報処理センター": 1,
+    "Oracle Cloud": 1,
+    "Rakuten": 1,
+    "STNet": 2,
+    "SoftBank": 1,
+    "TIS": 1,
+    "TOKAIコミュニケーションズ": 2,
+    "Digital Edge": 2,
+    "SCSK": 1,
+    "ほくでん情報テクノロジー株式会社": 1,
+    "エネコム": 1,
+    "富士通": 1,
+    "日立": 1,
+    "東日本電信電話株式会社": 1,
+    "株式会社I・TECソリューションズ": 1,
+    "株式会社アット東京": 1,
+    "株式会社ＨＢＡ": 1,
+    "電算": 2,
+    "高知信用金庫": 1,
+    "AirTrunk": 1,
+    "ＳＣＳＫ株式会社": 1
+   }
+  },
+  {
+   "code": "AU",
+   "name": "Australia",
+   "count": 112,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 77,
+    "enterprise": 23,
+    "hyperscale": 12
+   },
+   "by_tier": {
+    "confirmed": 112
+   },
+   "operators": {
+    "42 - 24 Pty Ltd": 2,
+    "ANZ": 1,
+    "Amazon Web Services": 8,
+    "AirTrunk": 4,
+    "Australian Data Centres": 1,
+    "Australian Securities Exchange": 1,
+    "Microsoft Azure": 1,
+    "Canberra Data Centres": 3,
+    "CDC": 3,
+    "NEXTDC": 12,
+    "Department of Defence": 1,
+    "DigiCo": 5,
+    "Digital Realty": 2,
+    "Equinix": 10,
+    "Firmus": 1,
+    "Fujitsu": 1,
+    "Google Cloud": 2,
+    "Macquarie Data Centres": 1,
+    "Macquarie Telecom Group": 1,
+    "Interactive": 2,
+    "Iron Mountain": 1,
+    "Leading Edge Data Centres": 5,
+    "Leading Edge Data Centre": 1,
+    "Microsoft": 4,
+    "DC Alliance": 1,
+    "Southern Cross Cable Network": 1,
+    "Cloud Carrier": 1,
+    "STACK Infrastructure": 1,
+    "DCI Data Centers": 1,
+    "TPG Telecom Limited": 1,
+    "TasmaNet": 1,
+    "Telstra": 4,
+    "SUBCO Pty Ltd": 1,
+    "TransACT": 1,
+    "Verizon": 1,
+    "VicTrack": 1,
+    "Vocus": 1
+   }
+  },
+  {
+   "code": "BE",
+   "name": "Belgium",
+   "count": 75,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 43,
+    "enterprise": 31,
+    "hyperscale": 1
+   },
+   "by_tier": {
+    "confirmed": 75
+   },
+   "operators": {
+    "Infrabel NV": 1,
+    "Ate": 1,
+    "Bouygues Télécom": 2,
+    "Datacenter United": 10,
+    "Cogent": 1,
+    "Colt Data Centre Services": 1,
+    "Comarch ICT": 1,
+    "Telenet Group NV": 2,
+    "Datacenter United / DCstar nv": 1,
+    "IBM": 1,
+    "Data Center United": 1,
+    "SNCF": 1,
+    "Digital Realty": 2,
+    "regioIT;synaix": 1,
+    "regioIT": 1,
+    "Louis Beke": 1,
+    "Google Cloud": 1,
+    "Google": 2,
+    "LCL Belgium nv": 1,
+    "LCL": 1,
+    "Worldline": 2,
+    "Orange": 1,
+    "Microsoft": 1,
+    "VUB;UZ Brussel": 1,
+    "OVHcloud": 1,
+    "Euro Information": 1,
+    "Smartdc": 1,
+    "Systemec": 1,
+    "Techcréa Solutions - First Heberg": 1,
+    "Unix-Solutions BV": 1
+   }
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "count": 71,
+   "total_power_mw": 7.0,
+   "power_known": 1,
+   "by_type": {
+    "enterprise": 28,
+    "hyperscale": 4,
+    "colocation": 38,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 71
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Ministero dei Beni e delle Attività Culturali": 1,
+    "Arpac": 1,
+    "Aruba S.p.A.": 4,
+    "Irideos": 1,
+    "Retelit": 1,
+    "Microsoft Azure": 1,
+    "Air France": 1,
+    "Bouygues Télécom": 1,
+    "CNAF": 1,
+    "TIM": 4,
+    "Bari Bianciardi Vanni": 1,
+    "Noovle S.p.A.": 1,
+    "Lepida": 1,
+    "Roma Capitale": 1,
+    "Unipol": 1,
+    "DATA4": 1,
+    "Google": 1,
+    "ECMWF": 1,
+    "Equinix": 3,
+    "Euclyde": 2,
+    "Google Cloud": 2,
+    "Università di Pisa": 1,
+    "Andrea": 1,
+    "TRENTINO DATAMINE S.r.l.": 1,
+    "EuroHPC JU / CINECA": 1,
+    "CINECA": 1,
+    "Microsoft": 1,
+    "Noovle S.p.A": 1,
+    "Quadrivium Digital": 1,
+    "STACK Infrastructure": 1,
+    "Cineca": 1,
+    "TAS Group": 1
+   }
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "count": 68,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 5,
+    "enterprise": 49,
+    "colocation": 14
+   },
+   "by_tier": {
+    "confirmed": 68
+   },
+   "operators": {
+    "Amazon Web Services": 2,
+    "Akshaya": 1,
+    "Microsoft Azure": 1,
+    "Colt Data Centre Services": 1,
+    "CtrlS": 1,
+    "Reliance": 1,
+    "myself": 1,
+    "Google Cloud": 2,
+    "Iron Mountain": 1,
+    "MilkyUpizise": 1,
+    "Venu": 1,
+    "NTT": 3,
+    "RMS": 1,
+    "Reliance Communications": 1,
+    "Yotta Datacenter Pvt Lmt": 1
+   }
+  },
+  {
+   "code": "SG",
+   "name": "Singapore",
+   "count": 65,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 51,
+    "hyperscale": 5,
+    "colocation": 9
+   },
+   "by_tier": {
+    "confirmed": 65
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Alibaba Cloud": 1,
+    "Microsoft Azure": 1,
+    "Equinix": 4,
+    "Google Cloud": 1,
+    "Google": 1,
+    "Meta": 1,
+    "ST Telemedia Global Data Centres": 1,
+    "Telin Singapore": 3
+   }
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "count": 61,
+   "total_power_mw": 4.0,
+   "power_known": 1,
+   "by_type": {
+    "hyperscale": 5,
+    "enterprise": 20,
+    "colocation": 35,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 61
+   },
+   "operators": {
+    "Amazon Web Services": 3,
+    "Albiant IT": 2,
+    "Microsoft Azure": 1,
+    "Bouygues Télécom": 2,
+    "Nasertic": 2,
+    "Telefónica": 1,
+    "Banco Santander": 1,
+    "Gobienro de Cantabria": 1,
+    "Cogent": 2,
+    "DATA4": 2,
+    "Merlin Properties": 1,
+    "KIO Networks España": 2,
+    "France Travail": 1,
+    "IBM": 1,
+    "ETIX": 2,
+    "Equinix": 1,
+    "Google Cloud": 1,
+    "Digital Realty": 3,
+    "EuroHPC JU / BSC": 1,
+    "Microsoft": 2,
+    "Mozoilo": 1,
+    "Nabiax": 2,
+    "NTT": 1,
+    "Air France": 1,
+    "Prosoluce": 1,
+    "SFR": 1,
+    "Zayo": 1,
+    "inforland.com": 1
+   }
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
+   "count": 61,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 15,
+    "colocation": 23,
+    "enterprise": 23
+   },
+   "by_tier": {
+    "confirmed": 60,
+    "probable": 1
+   },
+   "operators": {
+    "Amazon Web Services": 9,
+    "Microsoft Azure": 1,
+    "BT Ireland": 1,
+    "Cork Internet Exchange (CIX)": 1,
+    "CyrusOne": 1,
+    "Digital Realty": 5,
+    "EXA Infrastructure": 1,
+    "Echelon Data Centres": 1,
+    "EdgeConneX": 1,
+    "Eir": 2,
+    "National Space Centre Ltd": 1,
+    "Equinix": 3,
+    "Google": 1,
+    "Meta": 4,
+    "Microsoft": 3,
+    "Prescient Data Centres Limited": 1,
+    "Verizon": 1,
+    "Vodafone": 1
+   }
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "count": 57,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 20,
+    "hyperscale": 5,
+    "enterprise": 32
+   },
+   "by_tier": {
+    "confirmed": 57
+   },
+   "operators": {
+    "ASAP Telecom": 1,
+    "Amazon Web Services": 1,
+    "Angola Cables": 2,
+    "Digital Realty": 1,
+    "Microsoft Azure": 1,
+    "UFJF": 1,
+    "Claro S/A": 1,
+    "VIVO SA": 1,
+    "Vivo": 1,
+    "CDL": 1,
+    "Universidade Estadual de Feira de Santana": 1,
+    "Click IP": 1,
+    "Ubatã Empreendimentos Imobiliários e Lazer LTDA": 1,
+    "Eletronuclear": 1,
+    "Equinix": 4,
+    "Google Cloud": 1,
+    "IBM Cloud": 1,
+    "Odata": 1,
+    "Oracle Cloud": 1,
+    "Scala Datacenters": 1,
+    "INFRAERO;DECA;Governo Federal": 1
+   }
+  },
+  {
+   "code": "RU",
+   "name": "Russia",
+   "count": 52,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 32,
+    "colocation": 20
+   },
+   "by_tier": {
+    "confirmed": 52
+   },
+   "operators": {
+    "3data": 1,
+    "ООО ИК \"Сибинтек\"": 1,
+    "DataPro": 3,
+    "MTS": 1,
+    "IXcellerate": 2,
+    "DataLine": 1,
+    "Rostelecom": 3,
+    "Selectel": 2,
+    "АО «Датацентр»": 1,
+    "Wildberries": 1,
+    "MTS Group": 1,
+    "Yandex": 3
+   }
+  },
+  {
+   "code": "FI",
+   "name": "Finland",
+   "count": 44,
+   "total_power_mw": 8.0,
+   "power_known": 1,
+   "by_type": {
+    "colocation": 19,
+    "enterprise": 22,
+    "hyperscale": 2,
+    "hpc/supercomputer": 1
+   },
+   "by_tier": {
+    "confirmed": 43,
+    "probable": 1
+   },
+   "operators": {
+    "CSC": 1,
+    "Equinix": 4,
+    "Ficolo": 2,
+    "Yandex": 1,
+    "Google": 2,
+    "Google Cloud": 1,
+    "Hetzner": 1,
+    "RISE": 1,
+    "EuroHPC JU / CSC": 1,
+    "EuroHPC/CSC": 1,
+    "Selectel": 2,
+    "Telia Finland Oyj": 1,
+    "Tietokettu": 1,
+    "TikTok / ByteDance": 1,
+    "Verne Global": 1,
+    "Rostelecom": 1
+   }
+  },
+  {
+   "code": "CZ",
+   "name": "Czechia",
+   "count": 41,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 11,
+    "enterprise": 30
+   },
+   "by_tier": {
+    "confirmed": 41
+   },
+   "operators": {
+    "CE Colo Czech s.r.o.": 1,
+    "O2 Czech Republic a.s.": 3,
+    "České Radiokomunikace, a.s.": 1,
+    "Coolhousing s.r.o.": 1,
+    "T-Mobile": 1,
+    "Seznam.cz": 1,
+    "Hetzner": 1,
+    "Wedos": 1,
+    "forpsi": 1
+   }
+  },
+  {
+   "code": "CH",
+   "name": "Switzerland",
+   "count": 39,
+   "total_power_mw": 3.0,
+   "power_known": 1,
+   "by_type": {
+    "enterprise": 13,
+    "hyperscale": 2,
+    "hpc/supercomputer": 1,
+    "colocation": 23
+   },
+   "by_tier": {
+    "confirmed": 39
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Microsoft Azure": 1,
+    "CERN": 1,
+    "Colobâle AG": 1,
+    "EKT AG": 1,
+    "Netrics AG": 1,
+    "Digital Realty": 1,
+    "Equinix": 3,
+    "STACK Infrastructure": 3,
+    "green.ch": 1,
+    "Green Datacenter AG": 2,
+    "Microsoft": 1,
+    "NTT": 1,
+    "Bund": 1,
+    "Organisation und Informatik der Stadt Zürich": 1,
+    "AXA Winterthur": 1,
+    "EWL AG": 1,
+    "Swisscom": 1,
+    "Vantage Data Centers": 1,
+    "NTS Colocation AG": 1,
+    "nLighten": 1
+   }
+  },
+  {
+   "code": "BW",
+   "name": "Botswana",
+   "count": 38,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 19,
+    "hyperscale": 1,
+    "enterprise": 18
+   },
+   "by_tier": {
+    "confirmed": 38
+   },
+   "operators": {
+    "Africa Data Centres": 2,
+    "BCX": 1,
+    "Apple": 1,
+    "Cool Ideas": 1,
+    "Equinix": 1,
+    "Teraco": 3,
+    "MTN": 2,
+    "NTT": 2,
+    "NexAxis | Harlequin Duck Properties": 1,
+    "Open Access Data Centres": 1,
+    "Telkom": 2,
+    "Terao Data Environments": 1,
+    "Vodacom": 1,
+    "Xneelo": 1
+   }
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia",
+   "count": 33,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 19,
+    "hyperscale": 6,
+    "enterprise": 8
+   },
+   "by_tier": {
+    "confirmed": 33
+   },
+   "operators": {
+    "PT. Dunia Virtual Online": 1,
+    "Amazon Web Services": 4,
+    "Microsoft Azure": 1,
+    "DCI Indonesia": 1,
+    "ICT": 1,
+    "Digital Hyperspace Indonesia": 1,
+    "Digital Edge Indonesia": 1,
+    "EDGE DC": 1,
+    "Equinix": 1,
+    "Graha Teknologi Nusantara": 1,
+    "Google Cloud": 1,
+    "Microsoft": 3,
+    "PT Era Daya Cipta": 3,
+    "Piyhost": 1,
+    "Princeton Digital Group": 1,
+    "Neutral DataCenter": 1,
+    "Universitas Pattimura": 1,
+    "Singapore Technologies Telemedia": 1
+   }
+  },
+  {
+   "code": "SE",
+   "name": "Sweden",
+   "count": 33,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 8,
+    "colocation": 13,
+    "enterprise": 12
+   },
+   "by_tier": {
+    "confirmed": 33
+   },
+   "operators": {
+    "Amazon Web Services": 4,
+    "Microsoft Azure": 1,
+    "Bahnhof": 3,
+    "Digital Realty": 1,
+    "Equinix": 1,
+    "Glesys AB": 1,
+    "Green Mountain": 1,
+    "IP-Only": 1,
+    "Kolo": 1,
+    "Meta": 3,
+    "Microsoft": 3,
+    "STACK Infrastructure": 1
+   }
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "count": 30,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 2,
+    "colocation": 12,
+    "enterprise": 16
+   },
+   "by_tier": {
+    "confirmed": 30
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Microsoft Azure": 1,
+    "CDC": 1,
+    "Chorus": 1,
+    "DCI": 1,
+    "Datavault": 1,
+    "Government Communications Security Bureau": 1,
+    "ICONZ": 1,
+    "Vodafone": 1,
+    "Spark New Zealand": 2,
+    "Microsoft": 2,
+    "Spark": 1
+   }
+  },
+  {
+   "code": "CA",
+   "name": "Canada",
+   "count": 29,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 15,
+    "hyperscale": 5,
+    "enterprise": 9
+   },
+   "by_tier": {
+    "confirmed": 29
+   },
+   "operators": {
+    "4Web": 1,
+    "Amazon Web Services": 2,
+    "Microsoft Azure": 1,
+    "Beacon Data Centers": 1,
+    "Bell Canada": 1,
+    "Equinix": 2,
+    "Google Cloud": 1,
+    "Hut 8": 1,
+    "Prairie Sky Data Solutions": 1,
+    "Qu Data Centres": 2,
+    "Qu": 1,
+    "Meta": 1,
+    "Teton Digital": 1,
+    "ThinkTel Communications": 1,
+    "Whipcord Edge": 1,
+    "Wolfpaw": 1,
+    "eStruxture": 1
+   }
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "count": 28,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 18,
+    "enterprise": 10
+   },
+   "by_tier": {
+    "confirmed": 28
+   },
+   "operators": {
+    "Bundesnachrichtendienst": 1,
+    "Audi AG": 1,
+    "Digital Realty": 1,
+    "Equinix": 1,
+    "LINZ NETZ GmbH": 1,
+    "LINZ STROM GAS WÄRME GmbH": 1,
+    "Leibniz-Rechenzentrum (LRZ) der Bayerischen Akademie der Wissenschaften": 1,
+    "Microsoft": 1,
+    "NorthC": 1,
+    "Max-Planck Computing & Data Facility": 1,
+    "STACK Infrastructure": 1,
+    "Siemens": 1,
+    "T-Mobile / Magenta": 1,
+    "A1 / Telekom Austria": 1,
+    "Telia Carrier Austria GmbH": 1,
+    "Kapsch BusinessCom AG": 1,
+    "noris": 1,
+    "innovIT360 AG": 1
+   }
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "count": 28,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 14,
+    "hyperscale": 2,
+    "enterprise": 12
+   },
+   "by_tier": {
+    "confirmed": 28
+   },
+   "operators": {
+    "ATMAN": 1,
+    "Apple": 1,
+    "Atman sp. z o.o.": 1,
+    "Microsoft Azure": 1,
+    "T‑Mobile Polska": 1,
+    "NASK S.A.": 1,
+    "DATA4": 1,
+    "Equinix": 1,
+    "Exatel S.A.": 1,
+    "OVHcloud": 1,
+    "3S Data Center S.A.": 1,
+    "Polcom": 2,
+    "Polkomtel": 1,
+    "Vantage Data Centers": 1,
+    "Orange Polska S.A.": 1
+   }
+  },
+  {
+   "code": "DK",
+   "name": "Denmark",
+   "count": 27,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 15,
+    "hyperscale": 4,
+    "enterprise": 8
+   },
+   "by_tier": {
+    "confirmed": 27
+   },
+   "operators": {
+    "31173 Services AB": 1,
+    "Adeo Datacenter ApS": 1,
+    "Aeven": 1,
+    "Apple": 2,
+    "Bulk Infrastructure": 1,
+    "Microsoft": 2,
+    "DigiPlex": 1,
+    "Digital Realty": 1,
+    "Glesys AB": 1,
+    "GlobalConnect": 1,
+    "Google": 1,
+    "Kolo": 2,
+    "Meta": 2,
+    "Prime Data Centers": 1,
+    "Ribe Mediehus": 1
+   }
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia",
+   "count": 27,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 24,
+    "hyperscale": 1,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 27
+   },
+   "operators": {
+    "Microsoft Azure": 1,
+    "Kominfo": 1,
+    "NEXTDC": 1
+   }
+  },
+  {
+   "code": "CL",
+   "name": "Chile",
+   "count": 26,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 4,
+    "colocation": 7,
+    "enterprise": 15
+   },
+   "by_tier": {
+    "confirmed": 26
+   },
+   "operators": {
+    "Amazon Web Services": 3,
+    "Actis": 1,
+    "Microsoft": 1,
+    "IFX Networks": 1,
+    "Equinix": 2,
+    "Google Cloud": 1,
+    "Google": 1,
+    "Lumen Technologies": 1
+   }
+  },
+  {
+   "code": "AR",
+   "name": "Argentina",
+   "count": 25,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 7,
+    "enterprise": 18
+   },
+   "by_tier": {
+    "confirmed": 25
+   },
+   "operators": {
+    "ARSAT": 1,
+    "Cirion Technologies": 2,
+    "Empresa Pampeana de Telecomunicaciones S.A.P.E.M.": 1,
+    "Claro Argentina": 1,
+    "TELECOM ARGENTINA S.A.": 1,
+    "Telecom": 1
+   }
+  },
+  {
+   "code": "HU",
+   "name": "Hungary",
+   "count": 23,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 9,
+    "colocation": 14
+   },
+   "by_tier": {
+    "confirmed": 23
+   },
+   "operators": {
+    "ATW": 1,
+    "ISZT - BUDAPEST INTERNET EXCHANGE": 1,
+    "Belügyminisztérium": 1,
+    "Drávanet Zrt.": 2,
+    "Invitech Megoldások Zrt.": 2,
+    "KBC GHB": 1,
+    "MVM NET Adatközpont Kft.": 1,
+    "Telekom Rendszerintegráció Zrt.": 1,
+    "Magyar Telekom": 3,
+    "Yettel Zrt.": 1
+   }
+  },
+  {
+   "code": "HK",
+   "name": "Hong Kong",
+   "count": 21,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 3,
+    "colocation": 3,
+    "enterprise": 15
+   },
+   "by_tier": {
+    "confirmed": 21
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Microsoft Azure": 1,
+    "Digital Realty": 1,
+    "Google Cloud": 1,
+    "MEGA Campus": 1,
+    "万国数据": 1
+   }
+  },
+  {
+   "code": "VE",
+   "name": "Venezuela",
+   "count": 21,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 13,
+    "enterprise": 8
+   },
+   "by_tier": {
+    "confirmed": 21
+   },
+   "operators": {
+    "Telefonica": 1,
+    "Bramar C.A": 1,
+    "CANTV": 7,
+    "Digitel": 2,
+    "university": 1,
+    "Movistar": 1
+   }
+  },
+  {
+   "code": "KR",
+   "name": "South Korea",
+   "count": 20,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 3,
+    "enterprise": 7,
+    "colocation": 10
+   },
+   "by_tier": {
+    "confirmed": 20
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Microsoft Azure": 1,
+    "Google Cloud": 1,
+    "KDDI / Telehouse": 2,
+    "엠피리온 디지털": 1,
+    "KT": 1,
+    "NTT": 2,
+    "SK브로드밴드": 1,
+    "IDCフロンティア": 1,
+    "네이버": 1,
+    "이지스자산운용": 1
+   }
+  },
+  {
+   "code": "PH",
+   "name": "Philippines",
+   "count": 18,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 5,
+    "enterprise": 13
+   },
+   "by_tier": {
+    "confirmed": 18
+   },
+   "operators": {
+    "ANH DOGE CO., LTD.": 1,
+    "Lyceum of the Philippines University, Inc.": 1,
+    "John Lloyd Quijano": 1,
+    "ePLDT": 1,
+    "techies FiberNet": 1
+   }
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "count": 18,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 9,
+    "enterprise": 9
+   },
+   "by_tier": {
+    "confirmed": 18
+   },
+   "operators": {
+    "Altia": 1,
+    "Altice": 1,
+    "Fundação para a Ciência e Tecnologia": 1,
+    "Portugal Telecom": 1,
+    "REN;NOS": 1,
+    "Equinix": 1,
+    "MEO": 1,
+    "NOS": 1,
+    "TATA Communications": 1
+   }
+  },
+  {
+   "code": "AE",
+   "name": "United Arab Emirates",
+   "count": 17,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 6,
+    "hyperscale": 6,
+    "colocation": 5
+   },
+   "by_tier": {
+    "confirmed": 17
+   },
+   "operators": {
+    "Amazon Web Services": 4,
+    "Microsoft Azure": 1,
+    "Equinix": 2,
+    "Google Cloud": 1,
+    "Gulf Data Hub": 1,
+    "Khazna Data Centers": 1,
+    "datamena": 1
+   }
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "count": 16,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 10,
+    "colocation": 6
+   },
+   "by_tier": {
+    "confirmed": 16
+   },
+   "operators": {
+    "Mars Datacenter": 1,
+    "Ti Sparkle": 1,
+    "Turkcell Superonline": 1,
+    "Turkcell": 1,
+    "Türk Telekom": 1,
+    "GRNET / ΕΔΥΤΕ": 1
+   }
+  },
+  {
+   "code": "PY",
+   "name": "Paraguay",
+   "count": 15,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 7,
+    "colocation": 8
+   },
+   "by_tier": {
+    "confirmed": 15
+   },
+   "operators": {
+    "REFSA": 7,
+    "REFSA TELECOMUNICACIONES": 1
+   }
+  },
+  {
+   "code": "??",
+   "name": "Unknown",
+   "count": 15,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 7,
+    "hyperscale": 1,
+    "enterprise": 7
+   },
+   "by_tier": {
+    "confirmed": 15
+   },
+   "operators": {
+    "AIRE": 1,
+    "Amazon Web Services": 1,
+    "Banco Nacional": 1,
+    "Dhiraagu": 1,
+    "Nautile": 1,
+    "ICE": 1,
+    "Microsoft": 1,
+    "Valorem": 1
+   }
+  },
+  {
+   "code": "IS",
+   "name": "Iceland",
+   "count": 13,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 7,
+    "enterprise": 6
+   },
+   "by_tier": {
+    "confirmed": 13
+   },
+   "operators": {
+    "Borealis": 2,
+    "atNorth": 3,
+    "Verne Global": 2
+   }
+  },
+  {
+   "code": "ZA",
+   "name": "South Africa",
+   "count": 13,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 4,
+    "enterprise": 5,
+    "colocation": 4
+   },
+   "by_tier": {
+    "confirmed": 13
+   },
+   "operators": {
+    "Amazon Web Services": 2,
+    "Microsoft Azure": 1,
+    "Google Cloud": 1,
+    "Open Access Data Centres": 1,
+    "OpenAccess Data Centres": 1,
+    "Sentech": 1,
+    "Teraco": 1
+   }
+  },
+  {
+   "code": "IQ",
+   "name": "Iraq",
+   "count": 12,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 11,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 12
+   },
+   "operators": {
+    "تۆمارگای گشتی": 1
+   }
+  },
+  {
+   "code": "TW",
+   "name": "Taiwan",
+   "count": 12,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 1,
+    "enterprise": 9,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 12
+   },
+   "operators": {
+    "Google Cloud": 1,
+    "中華電信數據通信分公司": 1,
+    "中華電信": 1
+   }
+  },
+  {
+   "code": "IR",
+   "name": "Iran",
+   "count": 11,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 5,
+    "enterprise": 6
+   },
+   "by_tier": {
+    "confirmed": 11
+   },
+   "operators": {
+    "Company": 1,
+    "DigitalOcean": 1,
+    "بهنام سمائی Behnam Samaee": 1,
+    "K. N. Toosi University of Technology": 1,
+    "آفاق اندیش داده پردیس": 1
+   }
+  },
+  {
+   "code": "SI",
+   "name": "Slovenia",
+   "count": 11,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 5,
+    "colocation": 6
+   },
+   "by_tier": {
+    "confirmed": 11
+   },
+   "operators": {
+    "ARNES": 1,
+    "Hrvatski Telekom": 1,
+    "Sveučilišni računski centar": 2,
+    "Odašiljači i veze d.o.o.": 1,
+    "Digital Reality": 1
+   }
+  },
+  {
+   "code": "LA",
+   "name": "Laos",
+   "count": 10,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2,
+    "colocation": 8
+   },
+   "by_tier": {
+    "confirmed": 10
+   },
+   "operators": {
+    "Viettel": 2,
+    "GDS": 1,
+    "FPT": 2,
+    "VNPT": 3
+   }
+  },
+  {
+   "code": "PE",
+   "name": "Peru",
+   "count": 10,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 6,
+    "hyperscale": 1,
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 10
+   },
+   "operators": {
+    "Cirion Technologies": 1,
+    "GTD Chile": 1,
+    "NextStream": 1,
+    "Win": 1,
+    "Huawei Cloud": 1,
+    "Fibrandes": 2
+   }
+  },
+  {
+   "code": "PK",
+   "name": "Pakistan",
+   "count": 10,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 9,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 10
+   },
+   "operators": {
+    "Peddler Media Network": 1
+   }
+  },
+  {
+   "code": "BD",
+   "name": "Bangladesh",
+   "count": 9,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2,
+    "enterprise": 7
+   },
+   "by_tier": {
+    "confirmed": 9
+   },
+   "operators": {
+    "Alliance Broadband": 1,
+    "Malda College": 1
+   }
+  },
+  {
+   "code": "BG",
+   "name": "Bulgaria",
+   "count": 9,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 5,
+    "enterprise": 4
+   },
+   "by_tier": {
+    "confirmed": 9
+   },
+   "operators": {
+    "Crypt Logic LTD": 1,
+    "Equinix": 1,
+    "Neterra": 1,
+    "Turkcell": 1,
+    "Digital Realty": 1
+   }
+  },
+  {
+   "code": "KZ",
+   "name": "Kazakhstan",
+   "count": 9,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 7,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 9
+   },
+   "operators": {
+    "Rostelecom": 1,
+    "Мегафон": 1
+   }
+  },
+  {
+   "code": "NO",
+   "name": "Norway",
+   "count": 9,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 1,
+    "enterprise": 3,
+    "colocation": 5
+   },
+   "by_tier": {
+    "confirmed": 9
+   },
+   "operators": {
+    "Microsoft Azure": 1,
+    "Bulk Infrastructure": 1,
+    "Green Mountain": 1,
+    "Privat": 1,
+    "STACK Infrastructure": 1,
+    "Troll Housing AS": 1
+   }
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia",
+   "count": 9,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 4,
+    "colocation": 5
+   },
+   "by_tier": {
+    "confirmed": 9
+   },
+   "operators": {
+    "O2 Czech Republic a.s.": 1,
+    "DIGI Távközlési és Szolgáltató Kft.": 1,
+    "Slovenská akadémia vied": 1,
+    "SWAN": 1,
+    "Slovak Telekom, a.s.": 1
+   }
+  },
+  {
+   "code": "LU",
+   "name": "Luxembourg",
+   "count": 8,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 6,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 8
+   },
+   "operators": {
+    "LuxConnect": 1,
+    "Verizon": 1
+   }
+  },
+  {
+   "code": "TR",
+   "name": "Turkey",
+   "count": 8,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 6,
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 8
+   },
+   "operators": {
+    "Hedef Global Bilişim Teknolojileri Sanayi Ticaret Limited Şirketi": 1,
+    "PenDC Data Center Solutions": 1,
+    "NGN": 1,
+    "Turkcell": 2,
+    "Vodafone Türkiye": 1
+   }
+  },
+  {
+   "code": "EC",
+   "name": "Ecuador",
+   "count": 6,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 4,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 6
+   },
+   "operators": {
+    "DEL PRADO .com.ec": 1,
+    "UNL": 1
+   }
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "count": 6,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 5
+   },
+   "by_tier": {
+    "confirmed": 6
+   },
+   "operators": {
+    "OCP/UM6P": 1
+   }
+  },
+  {
+   "code": "PS",
+   "name": "Palestine",
+   "count": 6,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 6
+   },
+   "by_tier": {
+    "confirmed": 6
+   },
+   "operators": {}
+  },
+  {
+   "code": "BH",
+   "name": "Bahrain",
+   "count": 5,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 4,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 5
+   },
+   "operators": {
+    "Amazon Web Services": 4,
+    "Batelco": 1
+   }
+  },
+  {
+   "code": "LT",
+   "name": "Lithuania",
+   "count": 5,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2,
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 5
+   },
+   "operators": {
+    "UAB „Baltnetos komunikacijos“": 1,
+    "Telia": 1
+   }
+  },
+  {
+   "code": "LV",
+   "name": "Latvia",
+   "count": 5,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2,
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 5
+   },
+   "operators": {
+    "Delska": 2
+   }
+  },
+  {
+   "code": "UY",
+   "name": "Uruguay",
+   "count": 5,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 4,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 5
+   },
+   "operators": {
+    "Cirion Technologies": 1,
+    "Google": 1,
+    "ANTEL": 1,
+    "Servicio Tecnico Electronico": 1
+   }
+  },
+  {
+   "code": "AM",
+   "name": "Armenia",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2,
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "GNC-Alfa": 1,
+    "GlobalAr LLC": 1
+   }
+  },
+  {
+   "code": "AZ",
+   "name": "Azerbaijan",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "Pasha Technology": 1
+   }
+  },
+  {
+   "code": "BY",
+   "name": "Belarus",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2,
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "ТАА «А1 IКТ сэрвiсы»": 1,
+    "ТАА Беларускія воблачныя тэхналогіі": 1
+   }
+  },
+  {
+   "code": "CO",
+   "name": "Colombia",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 4
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {}
+  },
+  {
+   "code": "HR",
+   "name": "Croatia",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 3,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "A1 Hrvatska d.o.o.": 1,
+    "Sveučilišni računski centar": 2
+   }
+  },
+  {
+   "code": "IL",
+   "name": "Israel",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 4
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "Amazon Web Services": 1,
+    "Microsoft Azure": 1,
+    "Google Cloud": 1,
+    "Oracle Cloud": 1
+   }
+  },
+  {
+   "code": "RO",
+   "name": "Romania",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2,
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "Digi România SA": 1,
+    "Orange România": 1
+   }
+  },
+  {
+   "code": "SV",
+   "name": "El Salvador",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 4
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {}
+  },
+  {
+   "code": "TH",
+   "name": "Thailand",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "NTT": 1
+   }
+  },
+  {
+   "code": "UA",
+   "name": "Ukraine",
+   "count": 4,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 3,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 4
+   },
+   "operators": {
+    "ТОВ \"АІРНЕТ\"": 1,
+    "ООО «ДатаПорт»": 1,
+    "Tucha": 1
+   }
+  },
+  {
+   "code": "AF",
+   "name": "Afghanistan",
+   "count": 3,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 3
+   },
+   "operators": {
+    "Khyber Medical College": 1
+   }
+  },
+  {
+   "code": "GE",
+   "name": "Georgia",
+   "count": 3,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 3
+   },
+   "operators": {}
+  },
+  {
+   "code": "LB",
+   "name": "Lebanon",
+   "count": 3,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 3
+   },
+   "operators": {
+    "Microsoft": 1
+   }
+  },
+  {
+   "code": "MG",
+   "name": "Madagascar",
+   "count": 3,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 3
+   },
+   "operators": {
+    "ITH Center": 1
+   }
+  },
+  {
+   "code": "MZ",
+   "name": "Mozambique",
+   "count": 3,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 3
+   },
+   "by_tier": {
+    "confirmed": 3
+   },
+   "operators": {}
+  },
+  {
+   "code": "BO",
+   "name": "Bolivia",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Empresa Nacional de Telecomunicaciones": 1
+   }
+  },
+  {
+   "code": "EG",
+   "name": "Egypt",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "7tteam": 1
+   }
+  },
+  {
+   "code": "GH",
+   "name": "Ghana",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Government of Ghana": 1
+   }
+  },
+  {
+   "code": "IM",
+   "name": "Isle of Man",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Domicilium": 1
+   }
+  },
+  {
+   "code": "KE",
+   "name": "Kenya",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {}
+  },
+  {
+   "code": "KH",
+   "name": "Cambodia",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "VNPT": 1
+   }
+  },
+  {
+   "code": "LK",
+   "name": "Sri Lanka",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Sri Lanka Telecom PLC": 1
+   }
+  },
+  {
+   "code": "MD",
+   "name": "Moldova",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 2
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {}
+  },
+  {
+   "code": "MK",
+   "name": "North Macedonia",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "ФИНКИ": 1
+   }
+  },
+  {
+   "code": "NP",
+   "name": "Nepal",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1,
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "training": 1
+   }
+  },
+  {
+   "code": "PG",
+   "name": "Papua New Guinea",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Post PNG": 1
+   }
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 2
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Claro": 1,
+    "Microsoft": 1
+   }
+  },
+  {
+   "code": "QA",
+   "name": "Qatar",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "hyperscale": 2
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Microsoft Azure": 1,
+    "Google Cloud": 1
+   }
+  },
+  {
+   "code": "RS",
+   "name": "Serbia",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "A1": 1
+   }
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "hyperscale": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "Ezditek": 1,
+    "Oracle Cloud": 1
+   }
+  },
+  {
+   "code": "UG",
+   "name": "Uganda",
+   "count": 2,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1,
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 2
+   },
+   "operators": {
+    "ESolutionsUG": 1
+   }
+  },
+  {
+   "code": "AL",
+   "name": "Albania",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "AO",
+   "name": "Angola",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "BA",
+   "name": "Bosnia and Herzegovina",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Sveučilišni računski centar": 1
+   }
+  },
+  {
+   "code": "BT",
+   "name": "Bhutan",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Nima Om": 1
+   }
+  },
+  {
+   "code": "CI",
+   "name": "Ivory Coast",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Raxio": 1
+   }
+  },
+  {
+   "code": "CM",
+   "name": "Cameroon",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "DO",
+   "name": "Dominican Republic",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Microsoft": 1
+   }
+  },
+  {
+   "code": "ET",
+   "name": "Ethiopia",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "KP",
+   "name": "North Korea",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "NHN": 1
+   }
+  },
+  {
+   "code": "ME",
+   "name": "Montenegro",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "MN",
+   "name": "Mongolia",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "MO",
+   "name": "Macau",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "MU",
+   "name": "Mauritius",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Emtel": 1
+   }
+  },
+  {
+   "code": "NG",
+   "name": "Nigeria",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Lecturers": 1
+   }
+  },
+  {
+   "code": "PA",
+   "name": "Panama",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "SR",
+   "name": "Suriname",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "TJ",
+   "name": "Tajikistan",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Digital Realty": 1
+   }
+  },
+  {
+   "code": "TN",
+   "name": "Tunisia",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "TT",
+   "name": "Trinidad and Tobago",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Microsoft": 1
+   }
+  },
+  {
+   "code": "TZ",
+   "name": "Tanzania",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "colocation": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {
+    "Wingu Africa": 1
+   }
+  },
+  {
+   "code": "VN",
+   "name": "Vietnam",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  },
+  {
+   "code": "XK",
+   "name": "Kosovo",
+   "count": 1,
+   "total_power_mw": 0.0,
+   "power_known": 0,
+   "by_type": {
+    "enterprise": 1
+   },
+   "by_tier": {
+    "confirmed": 1
+   },
+   "operators": {}
+  }
+ ]
+}
