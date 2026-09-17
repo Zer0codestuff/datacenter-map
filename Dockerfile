@@ -16,4 +16,4 @@ RUN npm install --global serve
 COPY --from=build /app/dist ./dist
 
 ENV NODE_ENV=production
-CMD ["sh", "-c", "serve --single --listen ${PORT:-3000} dist"]
+CMD ["sh", "-c", "serve --single --listen tcp://0.0.0.0:${PORT:-3000} dist"]
