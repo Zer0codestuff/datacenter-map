@@ -14,11 +14,12 @@ Data Center Map is a static Vite and TypeScript web app. The Python scripts buil
 
 ## Current status
 
-The app is deployed from the `main` branch. Railway uses the root `Dockerfile` to build the Vite bundle and serve `dist` on the assigned `PORT`.
+The app is deployed from the `main` branch. Railway uses the root `Dockerfile` to build the Vite bundle, then `server.mjs` serves `dist` on the assigned `PORT`.
 
 ## Recent changes
 
 - Added the Railway Dockerfile so the root Python requirements file does not affect front-end deployment detection.
+- Added the dependency-free Node static server used by Railway at runtime.
 
 ## Constraints and known issues
 
@@ -31,3 +32,4 @@ The app is deployed from the `main` branch. Railway uses the root `Dockerfile` t
 - Do not delete provenance fields or invent missing dataset values.
 - Do not replace the open map stack with a paid provider by default.
 - Do not remove the Dockerfile unless Railway deployment no longer needs it.
+- Do not remove `server.mjs` without replacing its static serving and SPA fallback behavior.
