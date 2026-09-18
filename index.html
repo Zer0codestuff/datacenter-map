@@ -1,122 +1,183 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Data Center Map — the world's compute infrastructure atlas</title>
     <meta name="description" content="Interactive world map of every known data center: confirmed, probable and theorized sites color-coded by confidence, with per-country stats, power usage, operator and purpose." />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="theme-color" content="#10151c" />
+    <meta property="og:title" content="Data Center Map" />
+    <meta property="og:description" content="An open atlas of the world's data centers — 4,000+ sites with sources, confidence tiers and country statistics." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+    <script>
+      // Apply the persisted theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem("dcm.theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <header id="topbar">
-      <h1>Data Center Map</h1>
-      <nav>
-        <button data-view="map" class="nav-btn active">Map</button>
-        <button data-view="dashboard" class="nav-btn">Dashboard</button>
-        <button data-view="countries" class="nav-btn">Countries</button>
-        <button data-view="compare" class="nav-btn">Compare</button>
-        <button data-view="about" class="nav-btn">Data &amp; methodology</button>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader__brand"><span data-icon="logo"></span>Data Center Map</div>
+      <div class="loader__bar"><i></i></div>
+      <div class="loader__text" id="loader-text">Loading the atlas…</div>
+    </div>
+
+    <div class="app">
+      <header class="topbar">
+        <a class="brand" href="#" data-nav="map" aria-label="Data Center Map — home">
+          <span class="brand__mark" data-icon="logo"></span>
+          <span>Data Center Map</span>
+          <span class="brand__tag">Open infrastructure atlas</span>
+        </a>
+
+        <nav class="topbar__nav" aria-label="Primary">
+          <div class="segmented" role="tablist" id="nav-tabs">
+            <button class="segmented__item" role="tab" data-nav="map" aria-selected="true" aria-controls="view-map">Map</button>
+            <button class="segmented__item" role="tab" data-nav="dashboard" aria-selected="false" aria-controls="view-dashboard">Dashboard</button>
+            <button class="segmented__item" role="tab" data-nav="countries" aria-selected="false" aria-controls="view-countries">Countries</button>
+            <button class="segmented__item" role="tab" data-nav="compare" aria-selected="false" aria-controls="view-compare">Compare</button>
+            <button class="segmented__item" role="tab" data-nav="about" aria-selected="false" aria-controls="view-about">Methodology</button>
+          </div>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost btn--icon" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme"><span data-icon="sun"></span></button>
+          <a class="btn btn--ghost btn--icon" href="https://github.com/Zer0codestuff/datacenter-map" target="_blank" rel="noopener" aria-label="Source on GitHub" title="GitHub"><span data-icon="github"></span></a>
+        </div>
+      </header>
+
+      <main class="views" id="main">
+        <!-- ================= MAP ================= -->
+        <section class="view is-active" id="view-map" role="tabpanel" aria-label="Map">
+          <div class="workspace" id="workspace">
+            <aside class="sidebar" id="sidebar" aria-label="Filters">
+              <div class="sidebar__head">
+                <div class="sidebar__title">
+                  <h2>Filters</h2>
+                  <div style="display:flex;gap:4px">
+                    <button class="btn btn--ghost btn--sm" id="reset-filters" title="Reset all filters"><span data-icon="reset"></span>Reset</button>
+                    <button class="btn btn--ghost btn--icon btn--sm sidebar-toggle--mobile" id="sidebar-close" aria-label="Close filters"><span data-icon="close"></span></button>
+                  </div>
+                </div>
+                <label class="search-wrap">
+                  <span class="search-wrap__icon" data-icon="search"></span>
+                  <span class="visually-hidden">Search name, operator or city</span>
+                  <input class="input input--search" id="search" type="search" placeholder="Search name, operator, city…" autocomplete="off" />
+                  <span class="kbd" aria-hidden="true">/</span>
+                </label>
+                <div class="results-bar" aria-live="polite">
+                  <span><strong id="result-count">—</strong> <span id="result-total"></span></span>
+                  <button class="btn btn--ghost btn--sm" id="fit-results" title="Zoom to results"><span data-icon="locate"></span>Zoom to results</button>
+                </div>
+              </div>
+
+              <div class="sidebar__body" id="filter-groups">
+                <!-- filter groups are rendered by map-view.ts -->
+              </div>
+
+              <div class="sidebar__foot">
+                <button class="btn" id="share-link"><span data-icon="link"></span>Copy link</button>
+                <a class="btn" href="https://github.com/Zer0codestuff/datacenter-map/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener"><span data-icon="external"></span>Add a site</a>
+              </div>
+            </aside>
+
+            <div class="map-stage">
+              <div class="map-canvas" id="map" role="application" aria-label="Interactive map of data centers"></div>
+
+              <div class="map-overlay map-overlay--tl">
+                <button class="btn btn--icon" id="sidebar-toggle" aria-label="Toggle filters" aria-expanded="true" title="Toggle filters"><span data-icon="panelLeft"></span></button>
+                <button class="btn sidebar-toggle--mobile" id="sidebar-open"><span data-icon="filter"></span>Filters <span class="badge" id="filter-badge" hidden>0</span></button>
+                <div class="chips" id="active-chips" aria-label="Active filters"></div>
+              </div>
+
+              <div class="map-overlay map-overlay--bl">
+                <div class="legend" id="legend" aria-label="Legend"></div>
+              </div>
+
+              <div class="map-empty card" id="map-empty" hidden></div>
+
+              <aside class="drawer" id="detail-drawer" aria-label="Site details" aria-hidden="true">
+                <!-- rendered by map-view.ts -->
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= DASHBOARD ================= -->
+        <section class="view view--scroll" id="view-dashboard" role="tabpanel" aria-label="Dashboard" hidden>
+          <div class="view__inner" id="dashboard-root"></div>
+        </section>
+
+        <!-- ================= COUNTRIES ================= -->
+        <section class="view view--scroll" id="view-countries" role="tabpanel" aria-label="Countries" hidden>
+          <div class="view__inner" id="countries-root"></div>
+        </section>
+
+        <!-- ================= COMPARE ================= -->
+        <section class="view view--scroll" id="view-compare" role="tabpanel" aria-label="Compare" hidden>
+          <div class="view__inner" id="compare-root"></div>
+        </section>
+
+        <!-- ================= METHODOLOGY ================= -->
+        <section class="view view--scroll" id="view-about" role="tabpanel" aria-label="Data and methodology" hidden>
+          <div class="view__inner">
+            <div class="prose">
+              <div class="section-head">
+                <div>
+                  <div class="section-head__eyebrow">Data &amp; methodology</div>
+                  <h1>How this atlas is built</h1>
+                  <p>Every record lists its sources. Missing values are explicit <code>null</code> and are never invented; estimated values are flagged with <code>*_estimated: true</code>.</p>
+                </div>
+              </div>
+
+              <h2>Confidence tiers</h2>
+              <div class="tier-cards">
+                <div class="tier-card"><div class="tier-card__head"><span class="dot dot--confirmed"></span>Confirmed</div><p>Operational and officially documented: operator page, regulatory filing, or OpenStreetMap / Wikidata with coordinates.</p></div>
+                <div class="tier-card"><div class="tier-card__head"><span class="dot dot--probable"></span>Probable</div><p>Strong evidence the site exists or is under construction, but not officially confirmed at that exact location (news, satellite imagery, permits).</p></div>
+                <div class="tier-card"><div class="tier-card__head"><span class="dot dot--theorized"></span>Theorized</div><p>Announced, rumoured, planned or speculative — for example proposed AI mega-campuses.</p></div>
+              </div>
+
+              <h2>Sources</h2>
+              <ul>
+                <li><strong>OpenStreetMap</strong> via the Overpass API: <code>telecom=data_center</code> and <code>building=data_center</code> features.</li>
+                <li><strong>Wikidata</strong> SPARQL: items that are an instance of <em>data center</em> (Q671224) with coordinates.</li>
+                <li><strong>Curated research</strong>: hyperscaler region pages (AWS, Azure, Google Cloud, Oracle, IBM, Alibaba), colocation providers (Equinix, Digital Realty, NTT, Switch, QTS, Vantage, CyrusOne, Iron Mountain, STACK, Colt, Global Switch, DATA4, Aruba…), Meta / Apple / xAI / OpenAI campuses, government and HPC sites, and crypto-mining facilities.</li>
+              </ul>
+
+              <h2>How records are merged</h2>
+              <p>Raw features are normalised to a common schema, de-duplicated when two records fall within 500&nbsp;m and share a name or operator, validated, and exported as JSON, GeoJSON and pre-computed statistics. The Python pipeline in <code>scripts/</code> reproduces the dataset end to end.</p>
+
+              <h2>Limitations</h2>
+              <ul>
+                <li>Cloud <em>region</em> markers are placed at the region's primary metro area; a region spans several availability zones whose exact locations are not public.</li>
+                <li>Power capacity is only shown when publicly reported; most sites have <code>null</code>. Headline MW totals are therefore a lower bound.</li>
+                <li>The estimated annual energy figure assumes the known capacity runs at 100% for 8,760 hours — an upper bound for those sites, not a measurement.</li>
+                <li>OpenStreetMap coverage is community-driven and uneven across countries.</li>
+              </ul>
+
+              <h2>Contributing</h2>
+              <p>Found an error or a missing site? Records can be added or corrected through pull requests — see <a href="https://github.com/Zer0codestuff/datacenter-map/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>. The dataset is open and the source is on <a href="https://github.com/Zer0codestuff/datacenter-map" target="_blank" rel="noopener">GitHub</a>.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="tabbar" aria-label="Primary (mobile)" id="tabbar">
+        <button class="tabbar__item" data-nav="map" aria-selected="true"><span data-icon="map"></span>Map</button>
+        <button class="tabbar__item" data-nav="dashboard" aria-selected="false"><span data-icon="dashboard"></span>Dashboard</button>
+        <button class="tabbar__item" data-nav="countries" aria-selected="false"><span data-icon="globe"></span>Countries</button>
+        <button class="tabbar__item" data-nav="compare" aria-selected="false"><span data-icon="compare"></span>Compare</button>
+        <button class="tabbar__item" data-nav="about" aria-selected="false"><span data-icon="book"></span>Method</button>
       </nav>
-    </header>
-
-    <main>
-      <section id="view-map" class="view active">
-        <div id="sidebar">
-          <input id="search" type="search" placeholder="Search name, operator, city…" />
-          <div class="filter-group">
-            <h3>Confidence tier</h3>
-            <label><input type="checkbox" data-f="tiers" value="confirmed" checked /> <span class="dot" style="background:#22c55e"></span> Confirmed</label>
-            <label><input type="checkbox" data-f="tiers" value="probable" checked /> <span class="dot" style="background:#f59e0b"></span> Probable</label>
-            <label><input type="checkbox" data-f="tiers" value="theorized" checked /> <span class="dot" style="background:#a855f7"></span> Theorized</label>
-          </div>
-          <div class="filter-group">
-            <h3>Status</h3>
-            <label><input type="checkbox" data-f="statuses" value="operational" checked /> Operational</label>
-            <label><input type="checkbox" data-f="statuses" value="under construction" checked /> Under construction</label>
-            <label><input type="checkbox" data-f="statuses" value="planned" checked /> Planned</label>
-            <label><input type="checkbox" data-f="statuses" value="decommissioned" checked /> Decommissioned</label>
-          </div>
-          <div class="filter-group">
-            <h3>Type</h3>
-            <div id="type-filters"></div>
-          </div>
-          <div class="filter-group">
-            <h3>Country</h3>
-            <select id="country-filter"><option value="">All countries</option></select>
-          </div>
-          <div class="filter-group">
-            <h3>Operator</h3>
-            <select id="operator-filter"><option value="">All operators</option></select>
-          </div>
-          <div class="filter-group">
-            <h3>Power capacity (MW)</h3>
-            <input id="min-mw" type="number" min="0" placeholder="min" />
-            <input id="max-mw" type="number" min="0" placeholder="max" />
-          </div>
-          <div class="filter-group">
-            <h3>Year opened</h3>
-            <input id="min-year" type="number" placeholder="from" />
-            <input id="max-year" type="number" placeholder="to" />
-          </div>
-          <button id="reset-filters">Reset filters</button>
-          <button id="share-link">Copy shareable link</button>
-        </div>
-        <div id="map"></div>
-        <div id="detail-panel" class="hidden"></div>
-      </section>
-
-      <section id="view-dashboard" class="view">
-        <h2>Global dashboard</h2>
-        <div id="headline" class="cards"></div>
-        <div class="chart-grid">
-          <div><h3>Sites by type</h3><div id="chart-type" class="barchart"></div></div>
-          <div><h3>Sites by confidence tier</h3><div id="chart-tier" class="barchart"></div></div>
-          <div><h3>Growth over time (year opened)</h3><div id="chart-year" class="barchart"></div></div>
-          <div><h3>Top 20 operators</h3><div id="chart-operators" class="barchart"></div></div>
-        </div>
-        <h2>Largest sites by known power capacity</h2>
-        <div class="table-wrapper"><table id="largest-table"></table></div>
-      </section>
-
-      <section id="view-countries" class="view">
-        <h2>Country statistics</h2>
-        <div class="table-wrapper"><table id="country-table"></table></div>
-        <div id="country-detail"></div>
-      </section>
-
-      <section id="view-compare" class="view">
-        <h2>Compare two countries</h2>
-        <div class="compare-picker">
-          <select id="compare-a"></select>
-          <select id="compare-b"></select>
-        </div>
-        <div class="table-wrapper"><table id="compare-table"></table></div>
-      </section>
-
-      <section id="view-about" class="view prose">
-        <h2>Data &amp; methodology</h2>
-        <p>This dataset is research-driven and open. Every record lists its sources; missing values are explicit <code>null</code> and are never invented. Estimated values are flagged with <code>*_estimated: true</code>.</p>
-        <h3>Confidence tiers</h3>
-        <ul>
-          <li><span class="dot" style="background:#22c55e"></span> <strong>Confirmed</strong> — operational and officially documented (operator page, regulatory filing, OSM/Wikidata with coordinates).</li>
-          <li><span class="dot" style="background:#f59e0b"></span> <strong>Probable</strong> — strong evidence the site exists or is under construction, but not officially confirmed at that exact location (news, satellite imagery, permits).</li>
-          <li><span class="dot" style="background:#a855f7"></span> <strong>Theorized</strong> — announced, rumoured, planned or speculative (e.g. proposed AI mega-campuses).</li>
-        </ul>
-        <h3>Sources</h3>
-        <ul>
-          <li>OpenStreetMap (Overpass API): <code>telecom=data_center</code>, <code>building=data_center</code></li>
-          <li>Wikidata SPARQL: items that are an instance of <em>data center</em> (Q671224) with coordinates</li>
-          <li>Curated research: hyperscaler region pages (AWS, Azure, Google Cloud, Oracle, IBM, Alibaba), colocation providers (Equinix, Digital Realty, NTT, Switch, QTS, Vantage, CyrusOne, Iron Mountain, STACK, Colt, Global Switch, DATA4, Aruba…), Meta/Apple/xAI/OpenAI campuses, government/HPC sites and crypto-mining facilities.</li>
-        </ul>
-        <h3>Limitations</h3>
-        <ul>
-          <li>Cloud <em>region</em> markers are placed at the region's primary metro area; a region spans multiple availability zones whose exact locations are not public.</li>
-          <li>Power capacity is only shown when publicly reported; most sites have <code>null</code>. Headline MW totals are therefore a lower bound.</li>
-          <li>OSM coverage is community-driven and uneven across countries.</li>
-        </ul>
-        <p>Found an error or a missing site? See <a href="https://github.com/Zer0codestuff/datacenter-map/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
-      </section>
-    </main>
+    </div>
 
     <script type="module" src="./src/main.ts"></script>
   </body>
