@@ -1,0 +1,137 @@
+/*
+ * Design tokens — the single source of truth for the Data Center Map UI.
+ * Two themes (dark is default; light via [data-theme="light"]).
+ * Tier colours are DATA colours: never reuse them for UI chrome.
+ */
+
+:root {
+  /* ---- Typography ---- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --text-xs: 0.72rem;
+  --text-sm: 0.8125rem;
+  --text-md: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --tracking-tight: -0.02em;
+  --tracking-caps: 0.08em;
+
+  /* ---- Spacing (4px base) ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+
+  /* ---- Radii ---- */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  /* ---- Layout ---- */
+  --topbar-h: 56px;
+  --tabbar-h: 60px;
+  --sidebar-w: 336px;
+  --drawer-w: 400px;
+  --content-max: 1200px;
+  --z-map: 1;
+  --z-overlay: 10;
+  --z-drawer: 20;
+  --z-topbar: 30;
+  --z-toast: 50;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 320ms;
+
+  /* ---- Data colours (tiers) ---- */
+  --tier-confirmed: #34d399;
+  --tier-probable: #fbbf24;
+  --tier-theorized: #c084fc;
+  --tier-confirmed-ink: #065f46;
+  --tier-probable-ink: #78350f;
+  --tier-theorized-ink: #581c87;
+
+  /* ---- Dark theme (default) ---- */
+  color-scheme: dark;
+  --bg: #0a0d12;
+  --bg-elev: #10151c;
+  --bg-elev-2: #161c25;
+  --bg-hover: rgba(255, 255, 255, 0.045);
+  --bg-active: rgba(255, 255, 255, 0.08);
+  --bg-scrim: rgba(5, 8, 12, 0.6);
+  --fg: #e8ecf1;
+  --fg-muted: #9aa5b4;
+  --fg-faint: #66717f;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --accent: #8fd3ff;
+  --accent-strong: #5cbcf6;
+  --accent-ink: #062033;
+  --accent-soft: rgba(143, 211, 255, 0.14);
+  --focus: #b8e4ff;
+  --danger: #fb7185;
+  --danger-soft: rgba(251, 113, 133, 0.14);
+  --chart-bar: #5f7f9d;
+  --chart-bar-strong: #8fd3ff;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px -8px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+  --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  --map-cluster: rgba(232, 236, 241, 0.92);
+  --map-cluster-ink: #0a0d12;
+  --map-point-stroke: #0a0d12;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f7fa;
+  --bg-elev: #ffffff;
+  --bg-elev-2: #eef2f6;
+  --bg-hover: rgba(15, 23, 42, 0.04);
+  --bg-active: rgba(15, 23, 42, 0.08);
+  --bg-scrim: rgba(15, 23, 42, 0.35);
+  --fg: #0f172a;
+  --fg-muted: #4b5a6d;
+  --fg-faint: #8593a5;
+  --border: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.22);
+  --accent: #0b6fb4;
+  --accent-strong: #095b93;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(11, 111, 180, 0.1);
+  --focus: #0b6fb4;
+  --danger: #dc2653;
+  --danger-soft: rgba(220, 38, 83, 0.1);
+  --chart-bar: #a9bdd1;
+  --chart-bar-strong: #0b6fb4;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 8px 24px -10px rgba(15, 23, 42, 0.2);
+  --shadow-lg: 0 24px 60px -24px rgba(15, 23, 42, 0.3);
+  --tier-confirmed: #059669;
+  --tier-probable: #d97706;
+  --tier-theorized: #9333ea;
+  --map-cluster: rgba(15, 23, 42, 0.86);
+  --map-cluster-ink: #ffffff;
+  --map-point-stroke: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+    --dur-slow: 0ms;
+  }
+}

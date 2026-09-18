@@ -47,9 +47,31 @@ export interface ViewState {
   zoom: number;
 }
 
-/** Encode filters + map view into a URL hash for shareable state. */
-export function encodeState(f: Filters, view: ViewState): string {
+export const VIEW_NAMES = ["map", "dashboard", "countries", "compare", "about"] as const;
+export type ViewName = (typeof VIEW_NAMES)[number];
+
+export function isViewName(v: string | null): v is ViewName {
+  return v !== null && (VIEW_NAMES as readonly string[]).includes(v);
+}
+
+/** Count of filters that differ from the defaults (used for badges). */
+export function activeFilterCount(f: Filters): number {
+  let n = 0;
+  if (f.tiers.size !== TIERS.length) n++;
+  if (f.statuses.size !== STATUSES.length) n++;
+  if (f.types.size !== SITE_TYPES.length) n++;
+  if (f.country) n++;
+  if (f.operator) n++;
+  if (f.minMw !== null || f.maxMw !== null) n++;
+  if (f.minYear !== null || f.maxYear !== null) n++;
+  if (f.search) n++;
+  return n;
+}
+
+/** Encode filters + map view (+ optional active page) into a URL hash for shareable state. */
+export function encodeState(f: Filters, view: ViewState, page: ViewName = "map"): string {
   const p = new URLSearchParams();
+  if (page !== "map") p.set("v", page);
   p.set("z", view.zoom.toFixed(2));
   p.set("lat", view.lat.toFixed(4));
   p.set("lng", view.lng.toFixed(4));
@@ -78,13 +100,15 @@ function parseNum(raw: string | null): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-/** Decode a URL hash back into filters + view. Unknown values are ignored. */
-export function decodeState(hash: string): { filters: Filters; view: ViewState } {
+/** Decode a URL hash back into filters + view (+ page). Unknown values are ignored. */
+export function decodeState(hash: string): { filters: Filters; view: ViewState; page: ViewName } {
   const f = defaultFilters();
   const view: ViewState = { lat: 20, lng: 10, zoom: 2 };
   const raw = hash.replace(/^#/, "");
-  if (!raw) return { filters: f, view };
+  if (!raw) return { filters: f, view, page: "map" };
   const p = new URLSearchParams(raw);
+  const pageRaw = p.get("v");
+  const page: ViewName = isViewName(pageRaw) ? pageRaw : "map";
   f.tiers = parseSet(p.get("tiers"), TIERS) as Set<Tier>;
   f.statuses = parseSet(p.get("status"), STATUSES) as Set<Status>;
   f.types = parseSet(p.get("types"), SITE_TYPES) as Set<SiteType>;
@@ -101,5 +125,5 @@ export function decodeState(hash: string): { filters: Filters; view: ViewState }
   if (z !== null) view.zoom = Math.min(20, Math.max(0, z));
   if (lat !== null) view.lat = Math.min(85, Math.max(-85, lat));
   if (lng !== null) view.lng = Math.min(180, Math.max(-180, lng));
-  return { filters: f, view };
+  return { filters: f, view, page };
 }

@@ -1,176 +1,255 @@
-/** App entry point: loads data, wires filters, map, views and URL state. */
+/** App entry point: loads data, wires navigation, theme, map, views and URL state. */
 
-import type { DataCenter, GlobalStats, Filters, SiteType } from "./types";
-import { SITE_TYPES } from "./types";
-import { defaultFilters, applyFilters, encodeState, decodeState } from "./state";
-import { SiteMap } from "./map";
-import { renderDashboard, renderCountryTable, renderCountryDetail, renderCompare, esc } from "./dashboard";
+import "./styles/main.css";
+import type { DataCenter, GlobalStats, Filters } from "./types";
+import { defaultFilters, applyFilters, encodeState, decodeState, type ViewName, type ViewState } from "./state";
+import { createMap, type MapLike } from "./map";
+import { MapView } from "./views/map-view";
+import { renderDashboard } from "./views/dashboard";
+import { CountriesView } from "./views/countries";
+import { CompareView } from "./views/compare";
+import { icons, type IconName } from "./ui/icons";
+import { getTheme, applyTheme, toggleTheme } from "./ui/theme";
+import { toast } from "./ui/toast";
+import { errorState } from "./ui/components";
 
 let allData: DataCenter[] = [];
 let stats: GlobalStats;
 let filters: Filters;
-let siteMap: SiteMap;
-let currentView = { lat: 20, lng: 10, zoom: 2 };
+let page: ViewName = "map";
+let view: ViewState = { lat: 20, lng: 10, zoom: 2 };
+let siteMap: MapLike;
+let mapView: MapView;
+let countriesView: CountriesView | null = null;
+let compareView: CompareView | null = null;
+let dashboardDirty = true;
+const countryNames = new Map<string, string>();
+
+/* ------------------------------------------------------------------ helpers */
+
+function injectIcons(root: ParentNode = document): void {
+  root.querySelectorAll<HTMLElement>("[data-icon]").forEach((el) => {
+    const name = el.dataset.icon as IconName;
+    if (icons[name]) el.innerHTML = icons[name];
+    el.removeAttribute("data-icon");
+  });
+}
+
+function setLoader(text: string | null): void {
+  const loader = document.getElementById("loader")!;
+  if (text === null) loader.classList.add("is-hidden");
+  else document.getElementById("loader-text")!.textContent = text;
+}
+
+function updateUrl(): void {
+  history.replaceState(null, "", encodeState(filters, view, page));
+}
+
+async function fetchJson<T>(url: string, label: string): Promise<T> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Could not load ${label} (${res.status})`);
+  return res.json() as Promise<T>;
+}
 
 async function loadData(): Promise<void> {
-  const [geoRes, statsRes] = await Promise.all([
-    fetch("./data/datacenters.geojson"),
-    fetch("./data/stats.json"),
+  setLoader("Loading site data…");
+  const [geo, s] = await Promise.all([
+    fetchJson<GeoJSON.FeatureCollection>("./data/datacenters.geojson", "the site dataset"),
+    fetchJson<GlobalStats>("./data/stats.json", "statistics"),
   ]);
-  const geo = await geoRes.json();
-  stats = await statsRes.json();
-  allData = geo.features.map((f: GeoJSON.Feature) => {
+  stats = s;
+  allData = geo.features.map((f) => {
     const p = f.properties as Omit<DataCenter, "lat" | "lng">;
     const [lng, lat] = (f.geometry as GeoJSON.Point).coordinates;
     return { ...p, lat, lng } as DataCenter;
   });
+  for (const c of stats.countries) if (c.code !== "??") countryNames.set(c.code, c.name);
+  for (const d of allData) if (d.country && !countryNames.has(d.country)) countryNames.set(d.country, d.country);
 }
 
-function refreshMap(): void {
+/* ------------------------------------------------------------------ filters */
+
+function refresh(): void {
   const filtered = applyFilters(allData, filters);
   siteMap.setData(filtered);
+  mapView.update(filtered);
   updateUrl();
 }
 
-function updateUrl(): void {
-  history.replaceState(null, "", encodeState(filters, currentView));
+function resetFilters(): void {
+  filters = defaultFilters();
+  mapView.setFilters(filters);
+  refresh();
+  toast("Filters reset", { icon: "reset" });
 }
 
-function showDetail(dc: DataCenter): void {
-  const panel = document.getElementById("detail-panel")!;
-  const fields: [string, string | number | null][] = [
-    ["Operator", dc.operator], ["Owner", dc.owner], ["Country", dc.country],
-    ["City / region", dc.city], ["Tier", dc.tier], ["Status", dc.status],
-    ["Type", dc.type], ["Purpose", dc.purpose],
-    ["Power capacity", dc.power_capacity_mw !== null ? `${dc.power_capacity_mw} MW${dc.power_capacity_mw_estimated ? " (estimated)" : ""}` : null],
-    ["IT load", dc.it_load_mw !== null ? `${dc.it_load_mw} MW` : null],
-    ["PUE", dc.pue], ["Area", dc.area_sqm !== null ? `${dc.area_sqm} m²` : null],
-    ["Buildings", dc.num_buildings], ["Year opened", dc.year_opened],
-    ["Cooling", dc.cooling_type], ["Renewables", dc.renewable_notes],
-    ["Connectivity", dc.connectivity],
-    ["Coordinates", `${dc.lat.toFixed(4)}, ${dc.lng.toFixed(4)}`],
-  ];
-  panel.innerHTML =
-    `<button class="close" aria-label="Close">&times;</button><h2>${esc(dc.name)}</h2><dl>` +
-    fields.filter(([, v]) => v !== null && v !== "").map(([k, v]) => `<dt>${k}</dt><dd>${esc(String(v))}</dd>`).join("") +
-    `</dl><h3>Sources</h3><ul>` +
-    dc.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>${s.retrieved ? ` (retrieved ${esc(s.retrieved)})` : ""}</li>`).join("") +
-    `</ul>`;
-  panel.classList.remove("hidden");
-  panel.querySelector(".close")!.addEventListener("click", () => panel.classList.add("hidden"));
-}
-
-function buildFilterUi(): void {
-  const typeBox = document.getElementById("type-filters")!;
-  typeBox.innerHTML = SITE_TYPES.map(
-    (t) => `<label><input type="checkbox" data-f="types" value="${t}" checked /> ${t}</label>`,
-  ).join("");
-
-  const countries = [...new Set(allData.map((d) => d.country).filter(Boolean))].sort() as string[];
-  (document.getElementById("country-filter") as HTMLSelectElement).innerHTML +=
-    countries.map((c) => `<option value="${c}">${c}</option>`).join("");
-  const operators = [...new Set(allData.map((d) => d.operator).filter(Boolean))].sort() as string[];
-  (document.getElementById("operator-filter") as HTMLSelectElement).innerHTML +=
-    operators.map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join("");
-
-  document.querySelectorAll<HTMLInputElement>('input[data-f]').forEach((cb) => {
-    cb.addEventListener("change", () => {
-      const key = cb.dataset.f as "tiers" | "statuses" | "types";
-      const set = filters[key] as Set<string>;
-      if (cb.checked) set.add(cb.value);
-      else set.delete(cb.value);
-      refreshMap();
-    });
-  });
-  document.getElementById("country-filter")!.addEventListener("change", (e) => {
-    filters.country = (e.target as HTMLSelectElement).value || null;
-    refreshMap();
-  });
-  document.getElementById("operator-filter")!.addEventListener("change", (e) => {
-    filters.operator = (e.target as HTMLSelectElement).value || null;
-    refreshMap();
-  });
-  const num = (id: string, set: (v: number | null) => void) =>
-    document.getElementById(id)!.addEventListener("input", (e) => {
-      const v = (e.target as HTMLInputElement).value;
-      set(v === "" ? null : Number(v));
-      refreshMap();
-    });
-  num("min-mw", (v) => (filters.minMw = v));
-  num("max-mw", (v) => (filters.maxMw = v));
-  num("min-year", (v) => (filters.minYear = v));
-  num("max-year", (v) => (filters.maxYear = v));
-  document.getElementById("search")!.addEventListener("input", (e) => {
-    filters.search = (e.target as HTMLInputElement).value;
-    refreshMap();
-  });
-  document.getElementById("reset-filters")!.addEventListener("click", () => {
-    filters = defaultFilters();
-    document.querySelectorAll<HTMLInputElement>('input[data-f]').forEach((cb) => (cb.checked = true));
-    (document.getElementById("country-filter") as HTMLSelectElement).value = "";
-    (document.getElementById("operator-filter") as HTMLSelectElement).value = "";
-    (document.getElementById("search") as HTMLInputElement).value = "";
-    ["min-mw", "max-mw", "min-year", "max-year"].forEach((id) => ((document.getElementById(id) as HTMLInputElement).value = ""));
-    refreshMap();
-  });
-  document.getElementById("share-link")!.addEventListener("click", async (e) => {
+async function share(): Promise<void> {
+  try {
     await navigator.clipboard.writeText(location.href);
-    (e.target as HTMLButtonElement).textContent = "Link copied!";
-    setTimeout(() => ((e.target as HTMLButtonElement).textContent = "Copy shareable link"), 1500);
-  });
+    toast("Link copied to clipboard", { icon: "link" });
+  } catch {
+    toast("Copy failed — use the address bar", { icon: "alert" });
+  }
 }
 
-function applyDecodedFilters(): void {
-  document.querySelectorAll<HTMLInputElement>('input[data-f]').forEach((cb) => {
-    const key = cb.dataset.f as "tiers" | "statuses" | "types";
-    cb.checked = (filters[key] as Set<string>).has(cb.value);
+/* --------------------------------------------------------------- navigation */
+
+function showPage(next: ViewName, opts: { push?: boolean } = {}): void {
+  page = next;
+  document.querySelectorAll<HTMLElement>(".view").forEach((v) => {
+    const active = v.id === `view-${next}`;
+    v.classList.toggle("is-active", active);
+    v.hidden = !active;
   });
-  (document.getElementById("search") as HTMLInputElement).value = filters.search;
-  if (filters.country) (document.getElementById("country-filter") as HTMLSelectElement).value = filters.country;
-  if (filters.operator) (document.getElementById("operator-filter") as HTMLSelectElement).value = filters.operator;
+  document.querySelectorAll<HTMLElement>("[data-nav]").forEach((b) => {
+    if (b.getAttribute("role") === "tab" || b.classList.contains("tabbar__item")) b.setAttribute("aria-selected", String(b.dataset.nav === next));
+  });
+  if (next === "map") siteMap.resize();
+  if (next === "dashboard" && dashboardDirty) {
+    renderDashboard(document.getElementById("dashboard-root")!, stats, allData, {
+      onSelectSite: (dc) => {
+        showPage("map");
+        siteMap.flyTo(dc, 10);
+        selectSite(dc);
+      },
+      onSelectOperator: (op) => {
+        filters = defaultFilters();
+        filters.operator = op;
+        mapView.setFilters(filters);
+        showPage("map");
+        refresh();
+        siteMap.fitTo(applyFilters(allData, filters));
+      },
+    });
+    dashboardDirty = false;
+  }
+  if (next === "countries" && !countriesView) {
+    countriesView = new CountriesView(document.getElementById("countries-root")!, stats, allData, {
+      onShowOnMap: (code) => {
+        filters = defaultFilters();
+        filters.country = code;
+        mapView.setFilters(filters);
+        showPage("map");
+        refresh();
+        siteMap.fitTo(applyFilters(allData, filters));
+      },
+    });
+  }
+  if (next === "compare" && !compareView) compareView = new CompareView(document.getElementById("compare-root")!, stats);
+  const scroller = document.querySelector<HTMLElement>(`#view-${next}.view--scroll`);
+  if (scroller && opts.push !== false) scroller.scrollTop = 0;
+  updateUrl();
 }
 
 function wireNav(): void {
-  document.querySelectorAll<HTMLButtonElement>(".nav-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".nav-btn").forEach((b) => b.classList.remove("active"));
-      document.querySelectorAll(".view").forEach((v) => v.classList.remove("active"));
-      btn.classList.add("active");
-      const view = btn.dataset.view!;
-      document.getElementById(`view-${view}`)!.classList.add("active");
-      if (view === "map") siteMap.resize();
-      if (view === "compare") renderCompare(stats);
-    });
+  document.querySelectorAll<HTMLElement>("[data-nav]").forEach((el) =>
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPage(el.dataset.nav as ViewName);
+    }),
+  );
+  // Keyboard arrows within the tablist.
+  document.getElementById("nav-tabs")!.addEventListener("keydown", (e) => {
+    const tabs = [...document.querySelectorAll<HTMLElement>('#nav-tabs [role="tab"]')];
+    const i = tabs.findIndex((t) => t === document.activeElement);
+    if (i < 0) return;
+    const delta = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if (!delta) return;
+    e.preventDefault();
+    const nextTab = tabs[(i + delta + tabs.length) % tabs.length];
+    nextTab.focus();
+    showPage(nextTab.dataset.nav as ViewName);
   });
 }
 
+/* ------------------------------------------------------------------- detail */
+
+function selectSite(dc: DataCenter): void {
+  siteMap.select(dc.id);
+  mapView.showDetail(dc);
+  if (window.matchMedia("(max-width: 760px)").matches) mapView.openSidebar(false);
+}
+
+function closeDetail(): void {
+  siteMap.select(null);
+  mapView.hideDetail();
+}
+
+/* -------------------------------------------------------------------- theme */
+
+function wireTheme(): void {
+  const btn = document.getElementById("theme-toggle")!;
+  const paint = () => {
+    const t = getTheme();
+    btn.innerHTML = t === "dark" ? icons.sun : icons.moon;
+    btn.setAttribute("aria-label", t === "dark" ? "Switch to light theme" : "Switch to dark theme");
+  };
+  applyTheme(getTheme());
+  paint();
+  btn.addEventListener("click", () => {
+    const t = toggleTheme();
+    siteMap.setTheme(t);
+    paint();
+  });
+}
+
+/* --------------------------------------------------------------------- main */
+
 async function main(): Promise<void> {
+  injectIcons();
   const decoded = decodeState(location.hash);
   filters = decoded.filters;
-  currentView = decoded.view;
+  view = decoded.view;
+  page = decoded.page;
 
   await loadData();
-  buildFilterUi();
-  applyDecodedFilters();
-  wireNav();
+  setLoader("Preparing the map…");
 
-  siteMap = new SiteMap("map", currentView, {
-    onSelect: showDetail,
+  mapView = new MapView(filters, {
+    onFiltersChange: refresh,
+    onReset: resetFilters,
+    onShare: share,
+    onFit: () => siteMap.fitTo(applyFilters(allData, filters)),
+    onCloseDetail: closeDetail,
+    onFlyTo: (dc) => siteMap.flyTo(dc, 12),
+    onFilterByOperator: (op) => {
+      filters.operator = op;
+      mapView.setFilters(filters);
+      refresh();
+      closeDetail();
+      siteMap.fitTo(applyFilters(allData, filters));
+    },
+    onFilterByCountry: (code) => {
+      filters.country = code;
+      mapView.setFilters(filters);
+      refresh();
+      closeDetail();
+      siteMap.fitTo(applyFilters(allData, filters));
+    },
+  });
+  mapView.init(allData, countryNames);
+  injectIcons();
+
+  siteMap = createMap("map", view, getTheme(), {
+    onSelect: selectSite,
     onMove: (v) => {
-      currentView = v;
+      view = v;
       updateUrl();
     },
   });
-  refreshMap();
+  wireTheme();
+  wireNav();
+  refresh();
+  showPage(page, { push: false });
 
-  renderDashboard(stats, allData);
-  renderCountryTable(stats, (code) => {
-    const stat = stats.countries.find((c) => c.code === code)!;
-    renderCountryDetail(stat, allData.filter((d) => d.country === code));
-  });
-  renderCompare(stats);
+  // Start with the sidebar collapsed on small screens.
+  if (window.matchMedia("(max-width: 760px)").matches) mapView.openSidebar(false);
+  setLoader(null);
 }
 
-main().catch((err) => {
-  document.body.innerHTML = `<p style="padding:2rem">Failed to load data: ${esc(String(err))}</p>`;
+main().catch((err: unknown) => {
+  console.error(err);
+  const loader = document.getElementById("loader")!;
+  loader.innerHTML = `<div class="card" style="max-width:420px">${errorState(err instanceof Error ? err.message : String(err), "retry")}</div>`;
+  loader.querySelector("#retry")?.addEventListener("click", () => location.reload());
 });
