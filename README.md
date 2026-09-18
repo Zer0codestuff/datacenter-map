@@ -4,19 +4,21 @@ An interactive world map of every known data center: confirmed, probable and the
 
 **Live app:** deploys to GitHub Pages via the included workflow (`Actions → Deploy to GitHub Pages`; enable Pages → GitHub Actions in repo settings).
 
-<!-- Screenshot placeholder: docs/screenshot-map.png -->
-<!-- Screenshot placeholder: docs/screenshot-dashboard.png -->
+![Map view](docs/screenshots/map-dark.png)
+
+<p align="center"><img src="docs/screenshots/dashboard.png" width="49%" alt="Dashboard" /> <img src="docs/screenshots/countries.png" width="49%" alt="Countries" /></p>
 
 ## Features
 
-- **Interactive map** (MapLibre GL + OpenStreetMap tiles): smooth pan/zoom, clustering at low zoom, color by confidence tier (green = confirmed, amber = probable, purple = theorized), marker size by known power capacity, click for a detail panel with every field and source links.
-- **Search & filters**: name/operator/city search; filters for tier, status, type, country, operator, power range and year opened.
-- **Country statistics**: sortable table (sites, known MW, data coverage) plus per-country breakdown by type and top operators.
-- **Global dashboard**: headline numbers (sites, countries, known MW, estimated annual TWh), charts by type/tier/year-opened, top-20 operators, and a "largest sites" leaderboard.
-- **Compare view**: side-by-side comparison of any two countries.
-- **Data & methodology page**: tiers, sources, estimation rules and limitations, in-app.
-- **Shareable state**: map view and all filters are encoded in the URL hash — copy the link to share exactly what you see.
-- **Responsive**: works on desktop and mobile.
+- **Interactive map** (MapLibre GL + OpenFreeMap vector tiles): smooth pan/zoom, neutral clusters sized by count, markers colored by confidence tier (green = confirmed, amber = probable, purple = theorized) and sized by known power capacity, hover tooltips, a selection halo, and a detail drawer with key metrics, every field and source links.
+- **Search & filters**: name/operator/city search (`/` shortcut); collapsible filter groups for tier, status, type, country, operator, power range and year opened, each with live counts; active-filter chips; results counter; "zoom to results"; explicit empty state when nothing matches.
+- **Country statistics**: filterable, sortable table with share-of-world bars and a sticky detail panel (tier, type and operator breakdown) plus a one-click "Show on map".
+- **Global dashboard**: headline KPIs (sites, countries, known MW, estimated annual TWh, data coverage), distribution charts by type/tier, growth by year opened, top operators and countries, and a "largest sites" leaderboard that jumps to the map.
+- **Compare view**: two countries side by side with mirrored proportional bars and a swap control.
+- **Data & methodology page**: tiers, sources, merging rules, estimation caveats and limitations, in-app.
+- **Shareable state**: the active page, map view and all filters live in the URL hash — copy the link to share exactly what you see.
+- **Design system**: dark and light themes (follows the OS, toggle persisted), consistent tokens for color/type/spacing, keyboard navigation, visible focus states, ARIA tab semantics and a mobile layout with a bottom tab bar and bottom-sheet filters/details. See [`docs/DESIGN.md`](docs/DESIGN.md).
+- **Graceful degradation**: if WebGL is unavailable the map area explains why while every other view keeps working; data-load failures show a retry state.
 
 ## Dataset
 
@@ -58,14 +60,17 @@ data/
   dist/               datacenters.geojson + stats.json (copied to public/data at build time)
 public/data/          data served to the web app
 src/                  TypeScript front-end
-  main.ts             app wiring: data loading, filters, views, URL state
-  map.ts              MapLibre GL map (clustering, tier colors, power-sized markers)
-  dashboard.ts        dashboard, country table, compare view rendering
-  state.ts            filter logic + shareable URL hash codec
+  main.ts             app wiring: data loading, navigation, theme, URL state
+  map.ts              MapLibre GL map (themed basemap, clustering, tier colors, hover/selection, WebGL fallback)
+  state.ts            filter logic + shareable URL hash codec (filters, view, page)
   stats.ts            aggregation helpers (median, TWh estimate, leaderboards)
   types.ts            shared types
+  styles/             design system: tokens.css, base.css, components.css, layout.css
+  ui/                 icons, formatting helpers, render primitives (KPI, bars, tables, states), theme, toast
+  views/              map-view.ts (filters, chips, legend, drawer), dashboard.ts, countries.ts, compare.ts
+docs/DESIGN.md        design system reference (identity, tokens, components, states, accessibility)
 tests/                pytest suite for the pipeline (10 tests)
-tests-frontend/       vitest suite for filters/URL-state/stats (13 tests)
+tests-frontend/       vitest suite for filters, URL state, stats, formatting and UI primitives (29 tests)
 .github/workflows/    ci.yml (pytest + vitest + build), deploy.yml (GitHub Pages)
 ```
 
@@ -89,7 +94,9 @@ To refresh the data, rerun `npm run data` and copy `data/dist/*` into `public/da
 
 ## Design decisions
 
-- **MapLibre GL + OSM raster tiles**: fully free/open stack, no API keys, satisfies the static-first constraint. Clustering is done natively by MapLibre's GeoJSON source.
+- **MapLibre GL + OpenFreeMap vector tiles**: fully free/open stack, no API keys, satisfies the static-first constraint. The `dark` and `positron` styles back the two themes; data layers are drawn above basemap labels and state/region labels are hidden below zoom 4.5 so clusters stay legible. Clustering is done natively by MapLibre's GeoJSON source.
+- **Design tokens over ad-hoc styling**: every color, radius, spacing step and motion duration is a CSS custom property in `src/styles/tokens.css`; tier colors are reserved for data and never reused for UI chrome. Themes swap the token set, not the components.
+- **No UI framework**: views render HTML strings from small typed helpers (`src/ui/components.ts`) and wire events directly — fast, dependency-light and easy to test.
 - **Precomputed stats.json**: the dashboard renders instantly without scanning 4k records client-side; `src/stats.ts` re-aggregates on the fly only for filtered/country views.
 - **URL hash (not query string)** for shareable state: works on GitHub Pages without server rewrites.
 - **Dedupe by proximity + identity**: records within 500 m sharing a normalized name or canonical operator are merged, with curated > Wikidata > OSM precedence and source-list union.
@@ -102,6 +109,7 @@ To refresh the data, rerun `npm run data` and copy `data/dist/*` into `public/da
 - OSM coverage is community-driven and uneven; some countries are under-mapped.
 - Wikidata yields relatively few data-center items (~64 with coordinates); OSM is the breadth source.
 - No choropleth country-boundary layer yet (country stats are table + detail panel; map colors are per-site).
+- Basemap tiles and web fonts are loaded from OpenFreeMap and Google Fonts at runtime; offline use falls back to system fonts and an empty basemap.
 
 ## Roadmap
 

@@ -18,6 +18,8 @@ The app is deployed from the `main` branch. Railway uses the root `Dockerfile` t
 
 ## Recent changes
 
+- Complete UI redesign (#3): new design system (`src/styles/`, `src/ui/`), views split into `src/views/`, dark/light themes, OpenFreeMap vector basemap, WebGL fallback, mobile bottom-sheet layout. Design reference in `docs/DESIGN.md`.
+
 - Added the Railway Dockerfile so the root Python requirements file does not affect front-end deployment detection.
 - Added the dependency-free Node static server used by Railway at runtime.
 
@@ -26,6 +28,8 @@ The app is deployed from the `main` branch. Railway uses the root `Dockerfile` t
 - Keep the app static-first and do not add a backend or paid map API key without an explicit request.
 - Preserve source URLs, retrieval dates, explicit nulls, and estimation flags in dataset records.
 - Map markers use approximate metro locations for cloud regions where exact availability-zone locations are not public.
+- Cluster-count labels must use a single fontstack that OpenFreeMap serves (`Noto Sans Regular`); a missing glyph set makes MapLibre drop the whole tile, hiding every marker in it.
+- Theme swaps call `map.setStyle(url, { diff: false })` so `style.load` fires and data layers are re-added.
 
 ## Do not
 
